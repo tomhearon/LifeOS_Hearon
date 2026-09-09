@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>body{margin:0;background:#EFECE5;font-family:system-ui,sans-serif}a{color:#7A4A2B}a:hover{color:#93402A}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 6px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-intro{font:400 12px/1.6 system-ui,sans-serif;color:rgba(0,0,0,.55);max-width:720px;margin:0 0 22px}.dv-opts{display:flex;flex-wrap:wrap;gap:32px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:24px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+
+<section class="dv-turn" id="t5">
+<div class="dv-thd"><a class="dv-tid" href="#t5">5</a><span class="dv-tname">Graphics-heavy theme + AI Agents</span></div>
+<p class="dv-intro"><a href="#5a">5a</a> "Obsidian Atlas" — a graphics-heavy preset from your new references: photo slots (drop real images straight onto them), layered area charts, radial gauges, glass cards. <a href="#5b">5b</a> is the AI Agents hub — Claude-powered agents scoped to each area, plus a builder. Both join the theme picker / app alongside Field Ledger (now default).</p>
+<div class="dv-opts">
+
+<!-- 5a OBSIDIAN ATLAS -->
+<div class="dv-opt" id="5a">
+<div class="dv-olabel"><a class="dv-oid" href="#5a">5a</a>Obsidian Atlas — photos, advanced graphs, glass cards</div>
+<div class="dv-card" style="width:1240px;background:#0B0E13">
+<div style="font-family:'Sora',system-ui,sans-serif;color:#EAF0F6;background:radial-gradient(900px 400px at 70% -12%,rgba(61,214,245,.1) 0%,rgba(11,14,19,0) 60%),#0B0E13;padding:0;display:flex">
+  <div style="width:200px;flex-shrink:0;border-right:1px solid rgba(255,255,255,.07);padding:20px 16px;display:flex;flex-direction:column;gap:4px">
+    <div style="font-size:15px;font-weight:700;letter-spacing:-0.01em;padding:0 10px 14px">◎ Life OS</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;background:rgba(61,214,245,.12);border:1px solid rgba(61,214,245,.3);color:#3DD6F5;font-weight:600">Overview</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;color:#7C8A99">Health &amp; Mind</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;color:#7C8A99">Money</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;color:#7C8A99">Admin</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;color:#7C8A99">Learning</div>
+    <div style="font-size:11px;padding:12px 12px 4px;color:#4A5665;letter-spacing:.1em;font-weight:600">AI</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;color:#7C8A99">✦ Agents</div>
+    <div style="font-size:12px;padding:9px 12px;border-radius:9px;color:#7C8A99">Insights</div>
+    <div style="flex:1"></div>
+    <div style="border-radius:12px;padding:12px;background:linear-gradient(150deg,rgba(61,214,245,.14),rgba(140,120,255,.1));border:1px solid rgba(61,214,245,.25)"><div style="font-size:11.5px;font-weight:600">Week grade A−</div><div style="font-size:10px;color:#7C8A99;margin-top:3px">Review closes Sunday</div></div>
+  </div>
+  <div style="flex:1;padding:20px 22px 24px">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-size:18px;font-weight:700">Morning, Tom</div>
+      <div style="display:flex;gap:8px;align-items:center"><div style="font-size:10.5px;padding:7px 12px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#7C8A99">Wed 05 Aug · 12:37</div><div style="width:30px;height:30px;border-radius:50%;overflow:hidden;border:1px solid rgba(61,214,245,.4)"><image-slot id="atlas-avatar" shape="circle" placeholder="You" style="width:30px;height:30px"></image-slot></div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:14px">
+      <div style="grid-column:span 4;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:15px 16px;backdrop-filter:blur(8px)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:22px;font-weight:700;color:#3DD6F5">115.2<span style="font-size:12px;color:#7C8A99"> kg</span></span><span style="font-size:10px;color:#54E3A2">−0.2 ahead · +12% pace</span></div>
+        <div style="font-size:10.5px;color:#7C8A99;margin-top:2px">Glide path · 115.6 → 105.0 · target 05 Oct</div>
+        <div style="position:relative;height:118px;border-radius:12px;overflow:hidden;margin-top:10px">
+          <image-slot id="atlas-hero" shape="rounded" radius="12" placeholder="Drop a motivation photo — race finish, the Forum, you at goal weight" style="width:100%;height:118px"></image-slot>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:10px"><span style="flex:1;text-align:center;font-size:11px;font-weight:600;padding:8px;border-radius:9px;background:rgba(61,214,245,.14);border:1px solid rgba(61,214,245,.35);color:#3DD6F5">Start run ▶</span><span style="text-align:center;font-size:11px;padding:8px 12px;border-radius:9px;background:rgba(255,255,255,.05);color:#7C8A99">Log meal</span></div>
+      </div>
+      <div style="grid-column:span 5;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:15px 16px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:11px;font-weight:600;color:#7C8A99;letter-spacing:.08em">NET WORTH &amp; FLOWS</span><span style="font-size:10.5px;padding:4px 9px;border-radius:10px;background:rgba(255,255,255,.06);color:#7C8A99">Monthly ▾</span></div>
+        <div style="display:flex;align-items:baseline;gap:10px;margin-top:6px"><span style="font-size:26px;font-weight:700">€148,230</span><span style="font-size:11px;color:#54E3A2">▲1.2% MTD</span></div>
+        <svg width="100%" height="96" viewBox="0 0 420 96" preserveAspectRatio="none" style="display:block;margin-top:6px">
+          <defs><linearGradient id="oa1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(61,214,245,.4)"></stop><stop offset="100%" stop-color="rgba(61,214,245,0)"></stop></linearGradient><linearGradient id="oa2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(84,227,162,.35)"></stop><stop offset="100%" stop-color="rgba(84,227,162,0)"></stop></linearGradient></defs>
+          <path d="M0,76 C60,72 100,64 160,52 C220,40 280,34 340,24 C370,19 400,16 420,14 L420,96 L0,96 Z" fill="url(#oa1)"></path>
+          <path d="M0,76 C60,72 100,64 160,52 C220,40 280,34 340,24 C370,19 400,16 420,14" fill="none" stroke="#3DD6F5" stroke-width="2.5" style="filter:drop-shadow(0 0 6px rgba(61,214,245,.6))"></path>
+          <path d="M0,86 C70,84 130,80 190,70 C250,60 310,56 370,48 C390,45 410,44 420,42 L420,96 L0,96 Z" fill="url(#oa2)"></path>
+          <path d="M0,86 C70,84 130,80 190,70 C250,60 310,56 370,48 C390,45 410,44 420,42" fill="none" stroke="#54E3A2" stroke-width="2"></path>
+          <circle cx="340" cy="24" r="4" fill="#3DD6F5"></circle>
+        </svg>
+        <div style="display:flex;gap:16px;font-size:10.5px;color:#7C8A99;margin-top:4px"><span><span style="color:#3DD6F5">●</span> Net worth</span><span><span style="color:#54E3A2">●</span> Invested</span><span style="margin-left:auto">Cash flow Aug: <strong style="color:#EAF0F6">+€1,140 proj.</strong></span></div>
+      </div>
+      <div style="grid-column:span 3;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:15px 16px">
+        <div style="font-size:11px;font-weight:600;color:#7C8A99;letter-spacing:.08em">DAY COMPLETION</div>
+        <div style="position:relative;width:120px;height:120px;margin:10px auto 0">
+          <svg width="120" height="120" style="transform:rotate(-90deg)">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="8"></circle>
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#3DD6F5" stroke-width="8" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="111.1" style="filter:drop-shadow(0 0 6px rgba(61,214,245,.6))"></circle>
+            <circle cx="60" cy="60" r="40" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="8"></circle>
+            <circle cx="60" cy="60" r="40" fill="none" stroke="#54E3A2" stroke-width="8" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="50.3"></circle>
+            <circle cx="60" cy="60" r="28" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="8"></circle>
+            <circle cx="60" cy="60" r="28" fill="none" stroke="#B08CFF" stroke-width="8" stroke-linecap="round" stroke-dasharray="175.9" stroke-dashoffset="65.1"></circle>
+          </svg>
+          <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><span style="font-size:19px;font-weight:700">66%</span></div>
+        </div>
+        <div style="display:grid;gap:3px;font-size:10.5px;color:#7C8A99;margin-top:10px"><span><span style="color:#3DD6F5">●</span> Health 66%</span><span><span style="color:#54E3A2">●</span> Fuel 80%</span><span><span style="color:#B08CFF">●</span> Learning 63%</span></div>
+      </div>
+      <div style="grid-column:span 4;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:15px 16px">
+        <div style="display:flex;justify-content:space-between"><span style="font-size:11px;font-weight:600;color:#7C8A99;letter-spacing:.08em">✦ AI ASSISTANT</span><span style="font-size:10px;color:#3DD6F5">analyzing your week…</span></div>
+        <div style="margin-top:10px;padding:11px 13px;border-radius:11px;background:rgba(61,214,245,.08);border:1px solid rgba(61,214,245,.25);font-size:12px;line-height:1.6;color:#C2D2E0">Protein is your weakest lever this week (hit 6/7). Front-load 40g at breakfast and tonight's target is easy. Also: streaming sub unused 34 days — cancel saves €19/mo → PhD fund.</div>
+        <div style="display:flex;gap:7px;margin-top:10px;align-items:center"><div style="flex:1;font-size:11px;color:#4A5665;padding:9px 12px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)">Ask or search…</div><div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#3DD6F5,#B08CFF);display:flex;align-items:center;justify-content:center;font-size:13px;color:#0B0E13">➤</div></div>
+      </div>
+      <div style="grid-column:span 4;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:15px 16px">
+        <div style="font-size:11px;font-weight:600;color:#7C8A99;letter-spacing:.08em">MOOD × ENERGY × LOAD</div>
+        <svg width="100%" height="104" viewBox="0 0 340 104" preserveAspectRatio="none" style="display:block;margin-top:8px">
+          <path d="M0,60 C40,50 70,66 110,54 C150,42 190,58 230,44 C270,32 310,40 340,30" fill="none" stroke="#54E3A2" stroke-width="2.5" style="filter:drop-shadow(0 0 5px rgba(84,227,162,.5))"></path>
+          <path d="M0,74 C40,70 70,78 110,68 C150,60 190,72 230,60 C270,50 310,56 340,46" fill="none" stroke="#F5D93D" stroke-width="2"></path>
+          <path d="M0,88 C40,86 70,80 110,84 C150,88 190,76 230,80 C270,84 310,70 340,74" fill="none" stroke="#B08CFF" stroke-width="2" stroke-dasharray="5 4"></path>
+        </svg>
+        <div style="display:flex;gap:14px;font-size:10.5px;color:#7C8A99;margin-top:4px"><span><span style="color:#54E3A2">●</span> Mood</span><span><span style="color:#F5D93D">●</span> Energy</span><span><span style="color:#B08CFF">●</span> Training load</span></div>
+      </div>
+      <div style="grid-column:span 4;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:15px 16px">
+        <div style="display:flex;justify-content:space-between"><span style="font-size:11px;font-weight:600;color:#7C8A99;letter-spacing:.08em">VIA ROMANA</span><span style="font-size:10.5px;color:#B08CFF;font-weight:600">🔥 8 days</span></div>
+        <div style="display:flex;gap:12px;margin-top:10px;align-items:center">
+          <div style="width:64px;height:86px;border-radius:8px;overflow:hidden;flex-shrink:0"><image-slot id="atlas-book" shape="rounded" radius="8" placeholder="Book cover" style="width:64px;height:86px"></image-slot></div>
+          <div style="flex:1"><div style="font-size:13px;font-weight:600">SPQR — Mary Beard</div><div style="font-size:10.5px;color:#7C8A99;margin-top:2px">ch. 7 tonight · 62%</div><div style="height:5px;border-radius:3px;background:rgba(255,255,255,.07);margin-top:8px"><div style="width:62%;height:100%;border-radius:3px;background:linear-gradient(90deg,#B08CFF,#3DD6F5);box-shadow:0 0 8px rgba(176,140,255,.5)"></div></div><div style="font-size:10.5px;color:#7C8A99;margin-top:8px">Phase I · W3/8 · next: shortlist 5 programs</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- 5b AI AGENTS -->
+<div class="dv-opt" id="5b">
+<div class="dv-olabel"><a class="dv-oid" href="#5b">5b</a>AI Agents hub — Claude-powered, scoped per area, with a builder</div>
+<div class="dv-card" style="width:1240px;background:#F8F4EB">
+<div style="font-family:'Newsreader',Georgia,serif;color:#211B14;padding:24px 30px 28px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #211B14;padding-bottom:12px">
+    <div><div style="font-size:24px;font-weight:600">Agents <span style="font-style:italic;font-weight:400;color:#93402A">— your staff</span></div><div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#6E6254;letter-spacing:.12em;margin-top:4px">POWERED BY CLAUDE · EACH AGENT SEES ONLY ITS AREA'S DATA · RUNS ON SCHEDULE OR ON ASK</div></div>
+    <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.08em;padding:7px 13px;border-radius:8px;background:#211B14;color:#F8F4EB">+ NEW AGENT</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px">
+    <div style="background:#FFFDF7;border:1px solid #E5DCCB;border-top:3px solid #E2725B;border-radius:12px;padding:15px 17px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px;font-weight:600">The Coach</span><span style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#4E6B3E;background:rgba(110,139,94,.14);border:1px solid #6E8B5E;border-radius:10px;padding:3px 8px">ACTIVE</span></div>
+      <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:3px">Health &amp; Mind · runs 0600 daily</div>
+      <div style="font-family:system-ui,sans-serif;font-size:11.5px;line-height:1.6;margin-top:9px;padding:10px 12px;background:#F1EADC;border-radius:8px">"Sleep avg 6:48 is your limiter. I moved tonight's run 30 min earlier and set lights-out 2230. Protein: front-load 40g at breakfast."</div>
+      <div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.08em;margin-top:9px">TOOLS: PLAN EDITS · REMINDERS · WEEKLY REPORT</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid #E5DCCB;border-top:3px solid #B98A2F;border-radius:12px;padding:15px 17px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px;font-weight:600">The Bursar</span><span style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#4E6B3E;background:rgba(110,139,94,.14);border:1px solid #6E8B5E;border-radius:10px;padding:3px 8px">ACTIVE</span></div>
+      <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:3px">Money · runs on new transactions</div>
+      <div style="font-family:system-ui,sans-serif;font-size:11.5px;line-height:1.6;margin-top:9px;padding:10px 12px;background:#F1EADC;border-radius:8px">"Streaming sub unused 34 days — cancel saves €19/mo. Redirect to PhD fund and you hit €20k four months sooner."</div>
+      <div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.08em;margin-top:9px">TOOLS: CATEGORIZE · BILL ALERTS · GOAL SWEEPS</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid #E5DCCB;border-top:3px solid #5E7B8B;border-radius:12px;padding:15px 17px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px;font-weight:600">The Adjutant</span><span style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#4E6B3E;background:rgba(110,139,94,.14);border:1px solid #6E8B5E;border-radius:10px;padding:3px 8px">ACTIVE</span></div>
+      <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:3px">Admin · runs 0500 + on due dates</div>
+      <div style="font-family:system-ui,sans-serif;font-size:11.5px;line-height:1.6;margin-top:9px;padding:10px 12px;background:#F1EADC;border-radius:8px">"TDY in 5 days: pack list drafted from your last trip, voucher template pre-filled. Dentist has Thursday 0900 free — book?"</div>
+      <div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.08em;margin-top:9px">TOOLS: RECURRING TASKS · CHECKLISTS · DRAFTS</div>
+    </div>
+    <div style="background:#FFFDF7;border:1px solid #E5DCCB;border-top:3px solid #8B5E7B;border-radius:12px;padding:15px 17px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:16px;font-weight:600">The Tutor</span><span style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#4E6B3E;background:rgba(110,139,94,.14);border:1px solid #6E8B5E;border-radius:10px;padding:3px 8px">ACTIVE</span></div>
+      <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:3px">Learning · runs evenings + Sundays</div>
+      <div style="font-family:system-ui,sans-serif;font-size:11.5px;line-height:1.6;margin-top:9px;padding:10px 12px;background:#F1EADC;border-radius:8px">"Quizzed you on SPQR ch. 6: 8/10. Tonight's ch. 7 pairs with History of Rome ep. 41. Two programs added to your shortlist — both fund Roman History PhDs."</div>
+      <div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.08em;margin-top:9px">TOOLS: QUIZZES · RECOMMENDATIONS · PROGRAM SCOUT</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:14px;margin-top:14px">
+    <div style="flex:1.5;background:#FFFDF7;border:1px dashed #B8AD9B;border-radius:12px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">AGENT BUILDER · DESCRIBE IT, CLAUDE WIRES IT</div>
+      <div style="display:flex;gap:10px;margin-top:10px;align-items:center">
+        <div style="flex:1;font-family:system-ui,sans-serif;font-size:12.5px;color:#9A8570;padding:11px 14px;border-radius:9px;background:#F8F4EB;border:1px solid #E5DCCB">e.g. "Watch my brokerage; if any position moves ±5% in a day, brief me at 1800 with context"</div>
+        <div style="font-family:system-ui,sans-serif;font-size:12px;font-weight:600;padding:11px 16px;border-radius:9px;background:#93402A;color:#FFF">Create</div>
+      </div>
+      <div style="font-family:system-ui,sans-serif;font-size:10.5px;color:#6E6254;margin-top:9px">Pick its area(s), data access, schedule, and tone. Agents draft; you approve — nothing sends or spends without you.</div>
+    </div>
+    <div style="flex:1;background:#F1EADC;border-radius:12px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">DAILY COUNCIL · 0600</div>
+      <div style="font-family:system-ui,sans-serif;font-size:11.5px;line-height:1.65;margin-top:8px;color:#211B14">All four agents pool their morning notes into the single briefing on Today — one screen, no tab-hopping. Conflicts (Coach wants a rest day, Adjutant scheduled the dentist) get flagged for your call.</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="dv-turn" id="t4">
+<div class="dv-thd"><a class="dv-tid" href="#t4">4</a><span class="dv-tname">The Mix + themes as a setting</span></div>
+<p class="dv-intro"><a href="#4a">4a</a> blends the three: The Ledger's warm paper and serif numerals as the base, Espresso Command's dense console grid, mono labels and accent-coded cards, and Midnight's glow reserved for the "live" elements (progress, next action). <a href="#4b">4b</a> shows how skins become a user setting — in the working build, all four presets will be one tap away and every screen re-themes from the same tokens.</p>
+<div class="dv-opts">
+
+<!-- 4a MIX -->
+<div class="dv-opt" id="4a">
+<div class="dv-olabel"><a class="dv-oid" href="#4a">4a</a>"Field Ledger" — paper base · console density · glow on live elements</div>
+<div class="dv-card" style="width:1240px;background:#F8F4EB">
+<div style="font-family:'Newsreader',Georgia,serif;color:#211B14;padding:24px 30px 28px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #211B14;padding-bottom:12px">
+    <div><div style="font-size:26px;font-weight:600">Good morning, Tom</div><div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#6E6254;letter-spacing:.12em;margin-top:4px">WED 05 AUG 2026 · READJUSTMENT W1/9 · DAY 2/63 · TDY IN 5 DAYS</div></div>
+    <div style="display:flex;gap:8px;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.08em">
+      <span style="padding:6px 12px;border-radius:14px;background:rgba(110,139,94,.14);border:1px solid #6E8B5E;color:#4E6B3E">ON PLAN · −0.2 KG</span>
+      <span style="padding:6px 12px;border-radius:14px;background:rgba(147,64,42,.1);border:1px solid #93402A;color:#93402A">🔥 12-DAY STREAK</span>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:16px">
+    <div style="grid-column:span 4;background:#FFFDF7;border:1px solid #E5DCCB;border-left:3px solid #93402A;border-radius:12px;padding:16px 18px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">TODAY'S ORDERS · 2/6</div>
+      <div style="margin-top:10px">
+        <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#B8AD9B">✓</span><span style="font-size:14.5px;color:#B8AD9B;text-decoration:line-through">Weigh-in — 115.2 kg</span></div>
+        <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#B8AD9B">✓</span><span style="font-size:14.5px;color:#B8AD9B;text-decoration:line-through">Creatine + IM8</span></div>
+        <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#E2725B">○</span><span style="font-size:14.5px">Run 1 · intervals ×8 <span style="font-family:ui-monospace,monospace;font-size:9px;color:#E2725B">HEALTH</span></span></div>
+        <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#5E7B8B">○</span><span style="font-size:14.5px">Travel voucher <span style="font-family:ui-monospace,monospace;font-size:9px;color:#FFF;background:#93402A;border-radius:3px;padding:1px 5px">TODAY</span></span></div>
+        <div style="display:flex;gap:9px;padding:7px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#B98A2F">○</span><span style="font-size:14.5px">Car insurance €89 · Fri <span style="font-family:ui-monospace,monospace;font-size:9px;color:#B98A2F">MONEY</span></span></div>
+        <div style="display:flex;gap:9px;padding:7px 0;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#8B5E7B">○</span><span style="font-size:14.5px">SPQR ch. 7 + Latin 20 min <span style="font-family:ui-monospace,monospace;font-size:9px;color:#8B5E7B">LEARN</span></span></div>
+      </div>
+      <div style="margin-top:12px;padding:11px 13px;background:#F1EADC;border-radius:8px;font-size:13px;font-style:italic;line-height:1.5">"Gutta cavat lapidem, non vi sed saepe cadendo." <span style="font-family:system-ui,sans-serif;font-size:10px;color:#6E6254;font-style:normal">— Ovid</span></div>
+    </div>
+    <div style="grid-column:span 8;background:#FFFDF7;border:1px solid #E5DCCB;border-left:3px solid #E2725B;border-radius:12px;padding:16px 18px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">HEALTH · RUN DAY · 2,150 KCAL · 190 P</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#6E6254">STANDARD MOBILITY · 25–30 MIN</span></div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:12px">
+        <div style="border-right:1px solid #E5DCCB;padding-right:16px"><div style="font-size:32px;font-weight:500">1,430</div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.1em;color:#9A8570">OF 2,150 KCAL</div><div style="height:4px;border-radius:2px;background:#E5DCCB;margin-top:7px"><div style="width:66%;height:100%;border-radius:2px;background:#B98A2F;box-shadow:0 0 8px rgba(185,138,47,.55)"></div></div></div>
+        <div style="border-right:1px solid #E5DCCB;padding:0 16px"><div style="font-size:32px;font-weight:500">152<span style="font-size:17px;color:#6E6254">g</span></div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.1em;color:#9A8570">OF 190 PROTEIN</div><div style="height:4px;border-radius:2px;background:#E5DCCB;margin-top:7px"><div style="width:80%;height:100%;border-radius:2px;background:#93402A;box-shadow:0 0 8px rgba(147,64,42,.5)"></div></div></div>
+        <div style="border-right:1px solid #E5DCCB;padding:0 16px"><div style="font-size:32px;font-weight:500">6,842</div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.1em;color:#9A8570">OF 10,000 STEPS</div><div style="height:4px;border-radius:2px;background:#E5DCCB;margin-top:7px"><div style="width:68%;height:100%;border-radius:2px;background:#6E8B5E;box-shadow:0 0 8px rgba(110,139,94,.55)"></div></div></div>
+        <div style="padding-left:16px"><div style="font-size:32px;font-weight:500">2.5<span style="font-size:17px;color:#6E6254">L</span></div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.1em;color:#9A8570">OF 4 L WATER</div><div style="height:4px;border-radius:2px;background:#E5DCCB;margin-top:7px"><div style="width:62%;height:100%;border-radius:2px;background:#5E7B8B;box-shadow:0 0 8px rgba(94,123,139,.55)"></div></div></div>
+      </div>
+      <div style="display:flex;gap:16px;margin-top:14px">
+        <div style="flex:1.4;background:#F8F4EB;border:1px solid #E5DCCB;border-radius:10px;padding:12px 15px">
+          <div style="display:flex;justify-content:space-between"><span style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">GLIDE PATH · 115.6 → 105.0</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#4E6B3E">−0.2 KG AHEAD</span></div>
+          <svg width="100%" height="52" viewBox="0 0 340 52" preserveAspectRatio="none" style="margin-top:6px;display:block"><line x1="0" y1="6" x2="340" y2="46" stroke="#B8AD9B" stroke-width="1" stroke-dasharray="4 4"></line><polyline points="0,8 13,10 26,7 39,11 52,9" fill="none" stroke="#93402A" stroke-width="2.5" stroke-linecap="round" style="filter:drop-shadow(0 0 4px rgba(147,64,42,.5))"></polyline><circle cx="52" cy="9" r="3.5" fill="#93402A"></circle></svg>
+          <div style="display:flex;gap:18px;margin-top:4px;font-family:ui-monospace,monospace;font-size:10.5px;color:#6E6254"><span><strong style="color:#211B14">115.3</strong> 7-D AVG</span><span><strong style="color:#211B14">10.3 KG</strong> TO GO</span><span>TARGET <strong style="color:#211B14">05 OCT</strong></span></div>
+        </div>
+        <div style="flex:1;background:rgba(147,64,42,.06);border:1px solid rgba(147,64,42,.35);border-radius:10px;padding:12px 15px;box-shadow:0 0 16px rgba(147,64,42,.12)">
+          <div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#93402A">NEXT ACTION · TONIGHT</div>
+          <div style="font-size:17px;font-weight:500;margin-top:4px">Run 1 <em style="color:#93402A">1:00 / 2:00 × 8</em></div>
+          <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:3px">History of Rome ep. 41 · mobility after</div>
+        </div>
+      </div>
+    </div>
+    <div style="grid-column:span 5;background:#FFFDF7;border:1px solid #E5DCCB;border-left:3px solid #B98A2F;border-radius:12px;padding:16px 18px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">MONEY · NET WORTH</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#4E6B3E">▲ 1.2% MTD</span></div>
+      <div style="display:flex;align-items:flex-end;gap:14px;margin-top:6px"><div style="font-size:36px;font-weight:500;letter-spacing:-0.01em">€148,230</div><svg width="110" height="32" viewBox="0 0 110 32"><polyline points="0,25 14,23 28,26 42,19 56,21 70,14 84,16 98,9 110,7" fill="none" stroke="#B98A2F" stroke-width="2" stroke-linecap="round"></polyline></svg></div>
+      <table style="width:100%;border-collapse:collapse;margin-top:8px;font-size:13px">
+        <tr style="border-bottom:1px dotted #E5DCCB"><td style="padding:6px 0;color:#6E6254">Checking</td><td style="text-align:right">€4,210</td></tr>
+        <tr style="border-bottom:1px dotted #E5DCCB"><td style="padding:6px 0;color:#6E6254">Savings</td><td style="text-align:right">€22,400</td></tr>
+        <tr style="border-bottom:1px dotted #E5DCCB"><td style="padding:6px 0;color:#6E6254">Brokerage</td><td style="text-align:right">€61,850 <span style="font-family:ui-monospace,monospace;font-size:9px;color:#4E6B3E">▲2.1%</span></td></tr>
+        <tr><td style="padding:6px 0;color:#6E6254">TSP / retirement</td><td style="text-align:right">€59,770</td></tr>
+      </table>
+      <div style="margin-top:8px;padding-top:8px;border-top:1px solid #E5DCCB;font-family:system-ui,sans-serif;font-size:11.5px;color:#6E6254">Due — <strong style="color:#93402A">insurance €89 Fri</strong> · internet €45 · rent €1,450</div>
+    </div>
+    <div style="grid-column:span 3;background:#FFFDF7;border:1px solid #E5DCCB;border-left:3px solid #5E7B8B;border-radius:12px;padding:16px 18px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">ADMIN · 3 OPEN</div>
+      <div style="margin-top:8px">
+        <div style="padding:7px 0;border-bottom:1px dotted #E5DCCB"><div style="font-size:14px">Travel voucher <span style="font-family:ui-monospace,monospace;font-size:8.5px;color:#FFF;background:#93402A;border-radius:3px;padding:1px 5px">TODAY</span></div></div>
+        <div style="padding:7px 0;border-bottom:1px dotted #E5DCCB"><div style="font-size:14px">Car registration <span style="font-family:system-ui,sans-serif;font-size:10px;color:#6E6254">Fri</span></div></div>
+        <div style="padding:7px 0;border-bottom:1px dotted #E5DCCB"><div style="font-size:14px">Book dentist <span style="font-family:system-ui,sans-serif;font-size:10px;color:#6E6254">this wk</span></div></div>
+        <div style="padding:7px 0;color:#B8AD9B"><div style="font-size:14px;text-decoration:line-through">Meal prep ✓</div></div>
+      </div>
+      <div style="margin-top:10px;font-family:ui-monospace,monospace;font-size:9.5px;color:#93402A;letter-spacing:.06em;line-height:1.6">⚑ TDY 10–14 AUG<br>PACK LIST OPENS SAT</div>
+    </div>
+    <div style="grid-column:span 4;background:#FFFDF7;border:1px solid #E5DCCB;border-left:3px solid #8B5E7B;border-radius:12px;padding:16px 18px;box-shadow:0 1px 4px rgba(33,27,20,.05)">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">LEARNING · VIA ROMANA</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#8B5E7B">🔥 8 DAYS</span></div>
+      <div style="margin-top:8px;font-size:14.5px;line-height:1.5">Doctorate track, <em>Phase I — Foundations.</em> Week 3 of 8.</div>
+      <div style="height:5px;border-radius:3px;background:#E5DCCB;margin-top:8px"><div style="width:37%;height:100%;border-radius:3px;background:#8B5E7B;box-shadow:0 0 8px rgba(139,94,123,.5)"></div></div>
+      <div style="display:flex;gap:10px;margin-top:10px">
+        <div style="flex:1;background:#F1EADC;border-radius:8px;padding:9px 11px"><div style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#9A8570">READING</div><div style="font-size:13px;margin-top:2px">SPQR <span style="font-family:ui-monospace,monospace;font-size:9px;color:#8B5E7B">62%</span></div></div>
+        <div style="flex:1;background:#F1EADC;border-radius:8px;padding:9px 11px"><div style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#9A8570">PODCAST</div><div style="font-size:13px;margin-top:2px">Rome ep. 41 <span style="font-family:ui-monospace,monospace;font-size:9px;color:#6E6254">34m</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- 4b THEME SETTING -->
+<div class="dv-opt" id="4b">
+<div class="dv-olabel"><a class="dv-oid" href="#4b">4b</a>Settings → Appearance — themes as user presets</div>
+<div class="dv-card" style="width:560px;background:#F8F4EB">
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#211B14;padding:22px 24px 26px">
+  <div style="font-size:17px;font-weight:700">Appearance</div>
+  <div style="font-family:system-ui,sans-serif;font-size:11.5px;color:#6E6254;margin-top:3px">Pick a theme — every screen re-themes instantly. Auto switches at sunset.</div>
+  <div style="display:grid;gap:10px;margin-top:16px">
+    <div style="display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;background:#FFFDF7;border:1px solid #E5DCCB">
+      <div style="width:64px;height:42px;border-radius:8px;background:#221912;flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:3px"><span style="width:9px;height:18px;border-radius:2px;background:#FF7A55"></span><span style="width:9px;height:12px;border-radius:2px;background:#FFB340"></span><span style="width:9px;height:15px;border-radius:2px;background:#FF8FA8"></span></div>
+      <div style="flex:1"><div style="font-size:13.5px;font-weight:600">Espresso Command</div><div style="font-family:system-ui,sans-serif;font-size:10.5px;color:#6E6254">Warm dark · dense console · bright terracotta</div></div>
+      <div style="width:18px;height:18px;border-radius:50%;border:2px solid #B8AD9B;box-sizing:border-box"></div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;background:#FFFDF7;border:1px solid #E5DCCB">
+      <div style="width:64px;height:42px;border-radius:8px;background:#F8F4EB;border:1px solid #E5DCCB;flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:3px"><span style="width:9px;height:18px;border-radius:2px;background:#93402A"></span><span style="width:9px;height:12px;border-radius:2px;background:#B98A2F"></span><span style="width:9px;height:15px;border-radius:2px;background:#6E8B5E"></span></div>
+      <div style="flex:1"><div style="font-size:13.5px;font-weight:600">The Ledger</div><div style="font-family:system-ui,sans-serif;font-size:10.5px;color:#6E6254">Warm paper · serif numerals · broadsheet calm</div></div>
+      <div style="width:18px;height:18px;border-radius:50%;border:2px solid #B8AD9B;box-sizing:border-box"></div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;background:#FFFDF7;border:1px solid #E5DCCB">
+      <div style="width:64px;height:42px;border-radius:8px;background:#081009;flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:3px"><span style="width:9px;height:18px;border-radius:2px;background:#3DF0A4;box-shadow:0 0 6px rgba(61,240,164,.8)"></span><span style="width:9px;height:12px;border-radius:2px;background:#4DD8FF"></span><span style="width:9px;height:15px;border-radius:2px;background:#C77DFF"></span></div>
+      <div style="flex:1"><div style="font-size:13.5px;font-weight:600">Midnight Signal</div><div style="font-family:system-ui,sans-serif;font-size:10.5px;color:#6E6254">Green-black · multi-neon glow · glassy cards</div></div>
+      <div style="width:18px;height:18px;border-radius:50%;border:2px solid #B8AD9B;box-sizing:border-box"></div>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;background:#FFFDF7;border:1px solid #E5DCCB">
+      <div style="width:64px;height:42px;border-radius:8px;background:linear-gradient(120deg,#F8F4EB 55%,#221912 55%);border:1px solid #E5DCCB;flex-shrink:0;display:flex;align-items:center;justify-content:center;gap:3px"><span style="width:9px;height:18px;border-radius:2px;background:#93402A"></span><span style="width:9px;height:12px;border-radius:2px;background:#E2725B"></span><span style="width:9px;height:15px;border-radius:2px;background:#8B5E7B"></span></div>
+      <div style="flex:1"><div style="font-size:13.5px;font-weight:600">Field Ledger <span style="font-family:ui-monospace,monospace;font-size:8.5px;letter-spacing:.1em;color:#FFF;background:#93402A;border-radius:3px;padding:2px 5px;vertical-align:2px">DEFAULT · MIX</span></div><div style="font-family:system-ui,sans-serif;font-size:10.5px;color:#6E6254">Paper base · console density · glow on live elements</div></div>
+      <div style="width:18px;height:18px;border-radius:50%;background:#93402A;color:#FFF;font-size:11px;text-align:center;line-height:18px">✓</div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:12px;background:#F1EADC">
+      <div><div style="font-size:13px;font-weight:600">Auto dark mode</div><div style="font-family:system-ui,sans-serif;font-size:10.5px;color:#6E6254">Ledger by day → Midnight after sunset</div></div>
+      <div style="width:40px;height:23px;border-radius:12px;background:#93402A;position:relative"><span style="position:absolute;top:2.5px;right:3px;width:18px;height:18px;border-radius:50%;background:#FFF"></span></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="dv-turn" id="t3">
+<div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Module areas — the six research features nested as applets (shown in Espresso Command)</span></div>
+<p class="dv-intro">New IA: four areas, each hosting applets. <strong>Money</strong> → Cash Flow, Bills &amp; Subscriptions, Savings Goals, Retirement Projection. <strong>Health &amp; Mind</strong> → training/fuel plus the Mood &amp; Energy log. <strong>Review</strong> → the Sunday weekly-close ritual across all areas. Structure is skin-agnostic — it ports to whichever direction wins.</p>
+<div class="dv-opts">
+
+<!-- 3a MONEY AREA -->
+<div class="dv-opt" id="3a">
+<div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Money area — Overview with Cash Flow, Subscriptions, Goals &amp; Retirement applets</div>
+<div class="dv-card" style="width:1240px;background:#221912">
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#FFF6E8;padding:24px 30px 28px">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:baseline;gap:14px"><div style="font-size:21px;font-weight:700">Money</div><div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#CDB098;letter-spacing:.1em">AUG 2026 · ALL ACCOUNTS SYNCED</div></div>
+    <div style="display:flex;gap:6px;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.08em">
+      <span style="padding:6px 12px;border-radius:14px;background:#FFB340;color:#221912;font-weight:700">OVERVIEW</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">CASH FLOW</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">BILLS &amp; SUBS</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">GOALS</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">RETIRE</span>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:18px">
+    <div style="grid-column:span 4;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FFB340;border-radius:14px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">NET WORTH</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#A9DC8C">▲ 1.2% MTD</span></div>
+      <div style="font-family:ui-monospace,monospace;font-size:30px;letter-spacing:-0.02em;margin-top:6px">€148,230</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px">
+        <div style="background:#392B20;border-radius:9px;padding:8px 11px"><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em">CHECKING</div><div style="font-family:ui-monospace,monospace;font-size:14px;margin-top:2px">€4,210</div></div>
+        <div style="background:#392B20;border-radius:9px;padding:8px 11px"><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em">SAVINGS</div><div style="font-family:ui-monospace,monospace;font-size:14px;margin-top:2px">€22,400</div></div>
+        <div style="background:#392B20;border-radius:9px;padding:8px 11px"><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em">BROKERAGE</div><div style="font-family:ui-monospace,monospace;font-size:14px;margin-top:2px">€61,850 <span style="font-size:9px;color:#A9DC8C">▲2.1%</span></div></div>
+        <div style="background:#392B20;border-radius:9px;padding:8px 11px"><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em">TSP</div><div style="font-family:ui-monospace,monospace;font-size:14px;margin-top:2px">€59,770</div></div>
+      </div>
+    </div>
+    <div style="grid-column:span 5;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #A9DC8C;border-radius:14px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">CASH FLOW · AUGUST</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#A9DC8C">NET +€1,140 PROJ.</span></div>
+      <div style="display:flex;gap:18px;margin-top:10px;font-family:ui-monospace,monospace"><div><div style="font-size:19px;color:#A9DC8C">+€4,320</div><div style="font-size:9px;color:#9A8570;letter-spacing:.1em">IN · PAY + BAH</div></div><div><div style="font-size:19px;color:#FF7A55">−€3,180</div><div style="font-size:9px;color:#9A8570;letter-spacing:.1em">OUT · PROJECTED</div></div></div>
+      <div style="display:grid;gap:6px;margin-top:12px">
+        <div style="display:flex;align-items:center;gap:9px;font-size:11.5px"><span style="width:74px;color:#CDB098">Housing</span><div style="flex:1;height:9px;border-radius:5px;background:#392B20"><div style="width:78%;height:100%;border-radius:5px;background:#FFB340"></div></div><span style="font-family:ui-monospace,monospace;width:46px;text-align:right">€1,450</span></div>
+        <div style="display:flex;align-items:center;gap:9px;font-size:11.5px"><span style="width:74px;color:#CDB098">Food</span><div style="flex:1;height:9px;border-radius:5px;background:#392B20"><div style="width:34%;height:100%;border-radius:5px;background:#FF7A55"></div></div><span style="font-family:ui-monospace,monospace;width:46px;text-align:right">€620</span></div>
+        <div style="display:flex;align-items:center;gap:9px;font-size:11.5px"><span style="width:74px;color:#CDB098">Transport</span><div style="flex:1;height:9px;border-radius:5px;background:#392B20"><div style="width:16%;height:100%;border-radius:5px;background:#6FD6C0"></div></div><span style="font-family:ui-monospace,monospace;width:46px;text-align:right">€290</span></div>
+        <div style="display:flex;align-items:center;gap:9px;font-size:11.5px"><span style="width:74px;color:#CDB098">Subs</span><div style="flex:1;height:9px;border-radius:5px;background:#392B20"><div style="width:8%;height:100%;border-radius:5px;background:#FF8FA8"></div></div><span style="font-family:ui-monospace,monospace;width:46px;text-align:right">€142</span></div>
+        <div style="display:flex;align-items:center;gap:9px;font-size:11.5px"><span style="width:74px;color:#CDB098">Other</span><div style="flex:1;height:9px;border-radius:5px;background:#392B20"><div style="width:37%;height:100%;border-radius:5px;background:#9A8570"></div></div><span style="font-family:ui-monospace,monospace;width:46px;text-align:right">€678</span></div>
+      </div>
+      <div style="margin-top:10px;font-size:11px;color:#CDB098">Food is tracking <span style="color:#A9DC8C">−12% vs July</span> — cut week aligns with Readjustment.</div>
+    </div>
+    <div style="grid-column:span 3;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FF8FA8;border-radius:14px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">SUBSCRIPTIONS</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#FF8FA8">€142/MO</span></div>
+      <div style="display:grid;gap:6px;margin-top:10px;font-size:12px">
+        <div style="display:flex;justify-content:space-between"><span>Spotify</span><span style="font-family:ui-monospace,monospace">€11</span></div>
+        <div style="display:flex;justify-content:space-between"><span>iCloud+</span><span style="font-family:ui-monospace,monospace">€3</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Audible</span><span style="font-family:ui-monospace,monospace">€10</span></div>
+        <div style="display:flex;justify-content:space-between"><span>Gym</span><span style="font-family:ui-monospace,monospace">€45</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 8px;margin:0 -8px;border-radius:8px;background:rgba(255,107,74,.12);border:1px solid rgba(255,107,74,.4)"><span>Streaming ×3 <span style="font-family:ui-monospace,monospace;font-size:9px;color:#FF6B4A">CANCEL 1?</span></span><span style="font-family:ui-monospace,monospace">€38</span></div>
+        <div style="display:flex;justify-content:space-between"><span>JSTOR</span><span style="font-family:ui-monospace,monospace">€20</span></div>
+      </div>
+      <div style="margin-top:10px;font-size:10.5px;color:#9A8570;font-family:ui-monospace,monospace;letter-spacing:.04em">UNUSED 30+ DAYS: 1 · SAVE €19/MO</div>
+    </div>
+    <div style="grid-column:span 7;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #6FD6C0;border-radius:14px;padding:16px 18px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570;margin-bottom:12px">SAVINGS GOALS</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+        <div style="background:#392B20;border-radius:11px;padding:12px 14px"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>Emergency fund</span><span style="font-family:ui-monospace,monospace;color:#6FD6C0">82%</span></div><div style="height:6px;border-radius:3px;background:#221912;margin-top:8px"><div style="width:82%;height:100%;border-radius:3px;background:#6FD6C0"></div></div><div style="font-family:ui-monospace,monospace;font-size:10px;color:#9A8570;margin-top:6px">€12,300 / €15,000</div></div>
+        <div style="background:#392B20;border-radius:11px;padding:12px 14px"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>PhD fund</span><span style="font-family:ui-monospace,monospace;color:#FF8FA8">31%</span></div><div style="height:6px;border-radius:3px;background:#221912;margin-top:8px"><div style="width:31%;height:100%;border-radius:3px;background:#FF8FA8"></div></div><div style="font-family:ui-monospace,monospace;font-size:10px;color:#9A8570;margin-top:6px">€6,200 / €20,000 · +€400/MO</div></div>
+        <div style="background:#392B20;border-radius:11px;padding:12px 14px"><div style="display:flex;justify-content:space-between;font-size:12.5px"><span>Next car</span><span style="font-family:ui-monospace,monospace;color:#FFB340">18%</span></div><div style="height:6px;border-radius:3px;background:#221912;margin-top:8px"><div style="width:18%;height:100%;border-radius:3px;background:#FFB340"></div></div><div style="font-family:ui-monospace,monospace;font-size:10px;color:#9A8570;margin-top:6px">€3,900 / €22,000</div></div>
+      </div>
+    </div>
+    <div style="grid-column:span 5;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #A9DC8C;border-radius:14px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">RETIREMENT PROJECTION</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#A9DC8C">ON TRACK · AGE 60</span></div>
+      <div style="display:flex;gap:16px;align-items:flex-end;margin-top:8px">
+        <svg width="200" height="62" viewBox="0 0 200 62"><path d="M0,56 C50,52 90,44 130,28 C160,16 185,8 200,4" fill="none" stroke="#A9DC8C" stroke-width="2.5" stroke-linecap="round"></path><circle cx="38" cy="52" r="3.5" fill="#FFB340"></circle><text x="30" y="44" font-family="ui-monospace" font-size="9" fill="#CDB098">now</text></svg>
+        <div style="font-family:ui-monospace,monospace"><div style="font-size:22px">€1.04M</div><div style="font-size:9px;color:#9A8570;letter-spacing:.1em">PROJECTED AT 60 · 7% REAL</div><div style="font-size:10px;color:#CDB098;margin-top:5px">+€200/mo TSP ⇒ <span style="color:#A9DC8C">€1.19M</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- 3b HEALTH & MIND -->
+<div class="dv-opt" id="3b">
+<div class="dv-olabel"><a class="dv-oid" href="#3b">3b</a>Health &amp; Mind area — training/fuel plus the Mood &amp; Energy applet</div>
+<div class="dv-card" style="width:1240px;background:#221912">
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#FFF6E8;padding:24px 30px 28px">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div style="display:flex;align-items:baseline;gap:14px"><div style="font-size:21px;font-weight:700">Health &amp; Mind</div><div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#CDB098;letter-spacing:.1em">READJUSTMENT W1/9 · RUN DAY</div></div>
+    <div style="display:flex;gap:6px;font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.08em">
+      <span style="padding:6px 12px;border-radius:14px;background:#FF7A55;color:#221912;font-weight:700">TODAY</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">TRAIN</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">FUEL</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">TREND</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">BODY</span>
+      <span style="padding:6px 12px;border-radius:14px;background:#2C211A;color:#CDB098">MIND</span>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:18px">
+    <div style="grid-column:span 7;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FF7A55;border-radius:14px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">GLIDE PATH · 115.6 → 105.0</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#A9DC8C">−0.2 KG AHEAD · TARGET 05 OCT</span></div>
+      <svg width="100%" height="88" viewBox="0 0 520 88" preserveAspectRatio="none" style="margin-top:10px;display:block"><line x1="0" y1="10" x2="520" y2="78" stroke="#9A8570" stroke-width="1" stroke-dasharray="5 4"></line><polyline points="0,12 20,14 40,11 60,15 80,13" fill="none" stroke="#FFC258" stroke-width="2.5" stroke-linecap="round"></polyline><circle cx="80" cy="13" r="4" fill="#FFC258"></circle></svg>
+      <div style="display:flex;gap:22px;margin-top:8px;font-family:ui-monospace,monospace;font-size:11px;color:#CDB098"><span><span style="color:#FFF6E8">115.2</span> today</span><span><span style="color:#FFF6E8">115.3</span> 7-d avg</span><span><span style="color:#FFF6E8">−0.4</span> this wk</span><span><span style="color:#FFF6E8">10.3 kg</span> to go</span></div>
+    </div>
+    <div style="grid-column:span 5;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FFB340;border-radius:14px;padding:16px 18px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">TODAY'S TARGETS</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px">
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:15px;color:#FFB340">1,430<span style="font-size:10px;color:#9A8570">/2,150</span></div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em;margin-top:2px">KCAL</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:15px;color:#FF8FA8">152<span style="font-size:10px;color:#9A8570">/190g</span></div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em;margin-top:2px">PROTEIN</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:15px;color:#FF7A55">6.8k<span style="font-size:10px;color:#9A8570">/10k</span></div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em;margin-top:2px">STEPS</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:15px;color:#6FD6C0">2.5<span style="font-size:10px;color:#9A8570">/4L</span></div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;letter-spacing:.1em;margin-top:2px">WATER</div></div>
+      </div>
+    </div>
+    <div style="grid-column:span 8;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FF8FA8;border-radius:14px;padding:16px 18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">MOOD &amp; ENERGY · ONE TAP AT 2100</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#CDB098">14-DAY VIEW</span></div>
+      <div style="display:flex;gap:5px;margin-top:12px;align-items:flex-end">
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.55"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.6"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">23</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.75"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.75"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">24</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.4"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.45"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">25</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.85"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.8"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">26</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.65"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.55"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">27</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.9"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.9"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">28</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.5"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.6"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">29</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.7"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.7"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">30</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.8"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.85"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">31</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.6"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.5"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">01</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.75"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.8"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">02</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.9"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.95"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">03</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C;opacity:.85"></div><div style="height:34px;border-radius:6px;background:#FFB340;opacity:.75"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;text-align:center">04</div></div>
+        <div style="flex:1;display:grid;gap:4px"><div style="height:34px;border-radius:6px;background:#A9DC8C"></div><div style="height:34px;border-radius:6px;background:#FFB340"></div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#FFF6E8;text-align:center">05</div></div>
+        <div style="width:56px;display:grid;gap:4px;margin-left:6px"><div style="height:34px;display:flex;align-items:center;font-family:ui-monospace,monospace;font-size:8px;color:#A9DC8C;letter-spacing:.08em">MOOD</div><div style="height:34px;display:flex;align-items:center;font-family:ui-monospace,monospace;font-size:8px;color:#FFB340;letter-spacing:.08em">ENERGY</div></div>
+      </div>
+      <div style="margin-top:10px;font-size:11.5px;color:#CDB098">Insight: energy dips track short sleep (&lt;6.5h) more than training load — mood rises on run days.</div>
+    </div>
+    <div style="grid-column:span 4;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #6FD6C0;border-radius:14px;padding:16px 18px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">SLEEP &amp; RECOVERY</div>
+      <div style="display:flex;gap:16px;margin-top:10px;font-family:ui-monospace,monospace"><div><div style="font-size:20px;color:#6FD6C0">7:12</div><div style="font-size:9px;color:#9A8570;letter-spacing:.1em">LAST NIGHT</div></div><div><div style="font-size:20px">6:48</div><div style="font-size:9px;color:#9A8570;letter-spacing:.1em">7-D AVG</div></div></div>
+      <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(111,214,192,.1);border:1px solid rgba(111,214,192,.4);font-size:11.5px;color:#CDB098">Tonight: lights out 2230 for tomorrow's lift day. Cutoff: caffeine 1400 ✓</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- 3c WEEKLY REVIEW -->
+<div class="dv-opt" id="3c">
+<div class="dv-olabel"><a class="dv-oid" href="#3c">3c</a>Review area — the Sunday weekly-close ritual across all modules</div>
+<div class="dv-card" style="width:1240px;background:#221912">
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#FFF6E8;background:radial-gradient(900px 360px at 50% -10%,#33251A 0%,#221912 60%);padding:24px 30px 28px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-end">
+    <div><div style="font-size:21px;font-weight:700">Weekly Review <span style="color:#FFB340">· Sunday ritual</span></div><div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#CDB098;letter-spacing:.1em;margin-top:4px">WEEK OF 27 JUL – 02 AUG · CLOSED IN 11 MIN</div></div>
+    <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.1em;padding:7px 13px;border-radius:16px;background:rgba(169,220,140,.13);border:1px solid #A9DC8C;color:#A9DC8C">WEEK GRADE · A−</div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px">
+    <div style="background:#2C211A;border:1px solid rgba(94,73,54,.4);border-top:3px solid #FF7A55;border-radius:14px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">HEALTH</div>
+      <div style="font-family:ui-monospace,monospace;font-size:24px;margin-top:8px">−0.6 <span style="font-size:12px;color:#9A8570">kg</span></div>
+      <div style="font-size:11.5px;color:#CDB098;margin-top:6px;line-height:1.55">5/5 sessions · protein hit 6/7 · steps avg 9.4k · sleep avg 6:48 <span style="color:#FF7A55">← fix</span></div>
+    </div>
+    <div style="background:#2C211A;border:1px solid rgba(94,73,54,.4);border-top:3px solid #FFB340;border-radius:14px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">MONEY</div>
+      <div style="font-family:ui-monospace,monospace;font-size:24px;margin-top:8px">€712 <span style="font-size:12px;color:#9A8570">spent</span></div>
+      <div style="font-size:11.5px;color:#CDB098;margin-top:6px;line-height:1.55">−9% vs budget · net worth +€1,840 · goals funded ✓ · 0 late bills</div>
+    </div>
+    <div style="background:#2C211A;border:1px solid rgba(94,73,54,.4);border-top:3px solid #6FD6C0;border-radius:14px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">ADMIN</div>
+      <div style="font-family:ui-monospace,monospace;font-size:24px;margin-top:8px">6/7 <span style="font-size:12px;color:#9A8570">cleared</span></div>
+      <div style="font-size:11.5px;color:#CDB098;margin-top:6px;line-height:1.55">Rolled over: travel voucher → <span style="color:#FF6B4A">due Wed</span> · TDY pack list queued</div>
+    </div>
+    <div style="background:#2C211A;border:1px solid rgba(94,73,54,.4);border-top:3px solid #FF8FA8;border-radius:14px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">LEARNING</div>
+      <div style="font-family:ui-monospace,monospace;font-size:24px;margin-top:8px">3 <span style="font-size:12px;color:#9A8570">chapters</span></div>
+      <div style="font-size:11.5px;color:#CDB098;margin-top:6px;line-height:1.55">Latin 5/7 days · 2 podcast eps · program shortlist 2/5 drafted</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-top:14px">
+    <div style="background:#2C211A;border:1px solid rgba(94,73,54,.4);border-radius:14px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570;margin-bottom:10px">NEXT WEEK · AUTO-DRAFTED, EDIT &amp; COMMIT</div>
+      <div style="display:grid;gap:7px;font-size:12.5px">
+        <div style="display:flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #FF7A55;box-sizing:border-box;flex-shrink:0"></span>Readjustment W2 — runs Tue/Thu/Sat, lifts Mon/Fri · sleep ≥7h ×5</div>
+        <div style="display:flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #FFB340;box-sizing:border-box;flex-shrink:0"></span>Cancel 1 streaming sub · move €400 → PhD fund on payday</div>
+        <div style="display:flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #6FD6C0;box-sizing:border-box;flex-shrink:0"></span>TDY Mon–Fri: pack Sun, voucher drafted before departure</div>
+        <div style="display:flex;gap:10px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #FF8FA8;box-sizing:border-box;flex-shrink:0"></span>Finish SPQR · complete program shortlist (5) · email 1 advisor</div>
+      </div>
+    </div>
+    <div style="background:linear-gradient(135deg,rgba(255,179,64,.12),rgba(44,33,26,0) 60%),#2C211A;border:1px solid rgba(94,73,54,.4);border-radius:14px;padding:15px 17px">
+      <div style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">MILESTONES THIS WEEK</div>
+      <div style="display:grid;gap:8px;margin-top:10px;font-size:12.5px">
+        <div>🏅 <strong>First 5 kg</strong> — 115.6 → sub-115 next week?</div>
+        <div>🔥 <strong>12-day logging streak</strong> — longest yet</div>
+        <div>📚 <strong>SPQR 62%</strong> — on pace to finish before TDY</div>
+      </div>
+      <div style="margin-top:12px;font-size:11.5px;font-style:italic;color:#CDB098;line-height:1.5">"Gutta cavat lapidem" — 12 drops and counting.</div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Phone · Daily Briefing — same day in all three directions</span></div>
+<p class="dv-intro">The phone is the logging device: one thumb-reach "next action" card up top, tap-to-log everywhere, module tab bar below. Pick the skin to carry into the working build — the desktop stays the analysis view, the phone is the capture view.</p>
+<div class="dv-opts">
+
+<!-- 2a espresso phone -->
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Espresso Command</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ true }}" hint-size="430px,900px">
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#FFF6E8;background:#221912;min-height:100%;display:flex;flex-direction:column">
+  <div style="padding:62px 18px 0;flex:1">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div><div style="font-size:20px;font-weight:700">Morning, Tom</div><div style="font-family:ui-monospace,Menlo,monospace;font-size:9.5px;color:#CDB098;letter-spacing:.1em;margin-top:3px">WED 05 AUG · READJ W1 · D2/63</div></div>
+      <div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.08em;padding:6px 10px;border-radius:14px;background:rgba(255,122,85,.13);border:1px solid #FF7A55;color:#FF7A55">🔥 12</div>
+    </div>
+    <div style="margin-top:14px;background:linear-gradient(135deg,#33251A,#2C211A);border:1px solid rgba(94,73,54,.5);border-left:3px solid #FF7A55;border-radius:14px;padding:14px 16px">
+      <div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.14em;color:#9A8570">NEXT ACTION</div>
+      <div style="font-size:17px;font-weight:600;margin-top:5px">Run 1 · 1:00 / 2:00 × 8</div>
+      <div style="font-size:11.5px;color:#CDB098;margin-top:3px">Pair: History of Rome ep. 41 · mobility after</div>
+      <div style="display:flex;gap:8px;margin-top:11px"><div style="flex:1;text-align:center;padding:10px;border-radius:10px;background:#FF7A55;color:#221912;font-weight:700;font-size:13px">Start ▶</div><div style="padding:10px 14px;border-radius:10px;background:#392B20;font-size:13px;color:#CDB098">Skip</div></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <div style="flex:1;background:#2C211A;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-family:ui-monospace,monospace;font-size:14px;color:#FFB340">1,430</div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;letter-spacing:.1em;margin-top:2px">KCAL 66%</div></div>
+      <div style="flex:1;background:#2C211A;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-family:ui-monospace,monospace;font-size:14px;color:#FF8FA8">152g</div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;letter-spacing:.1em;margin-top:2px">PRO 80%</div></div>
+      <div style="flex:1;background:#2C211A;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-family:ui-monospace,monospace;font-size:14px;color:#FF7A55">6.8k</div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;letter-spacing:.1em;margin-top:2px">STEPS</div></div>
+      <div style="flex:1;background:#2C211A;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-family:ui-monospace,monospace;font-size:14px;color:#6FD6C0">2.5L</div><div style="font-family:ui-monospace,monospace;font-size:8px;color:#9A8570;letter-spacing:.1em;margin-top:2px">WATER</div></div>
+    </div>
+    <div style="margin-top:12px;background:#2C211A;border-radius:14px;padding:13px 16px">
+      <div style="display:flex;justify-content:space-between"><span style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.14em;color:#9A8570">ORDERS · 2/6</span><span style="font-family:ui-monospace,monospace;font-size:9px;color:#A9DC8C">−0.2 KG AHEAD</span></div>
+      <div style="display:grid;gap:6px;margin-top:9px">
+        <div style="display:flex;gap:9px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #6FD6C0;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Travel voucher <span style="font-family:ui-monospace,monospace;font-size:9px;color:#FF6B4A">TODAY</span></span></div>
+        <div style="display:flex;gap:9px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #FFB340;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Car insurance €89 · Fri</span></div>
+        <div style="display:flex;gap:9px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #FF8FA8;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">SPQR ch. 7 + Latin 20 min</span></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <div style="flex:1.2;background:#2C211A;border-radius:14px;padding:12px 14px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">NET WORTH</div><div style="font-family:ui-monospace,monospace;font-size:17px;margin-top:4px">€148.2k <span style="font-size:10px;color:#A9DC8C">▲1.2%</span></div></div>
+      <div style="flex:1;background:#2C211A;border-radius:14px;padding:12px 14px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">VIA ROMANA</div><div style="font-size:12px;margin-top:4px;color:#FF8FA8">W3/8 · 🔥 8</div></div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-around;padding:10px 8px 6px;background:#1B140E;border-top:1px solid rgba(94,73,54,.4)">
+    <div style="text-align:center;color:#FF7A55"><div style="font-size:15px">◉</div><div style="font-family:ui-monospace,monospace;font-size:8px;letter-spacing:.08em;margin-top:2px">TODAY</div></div>
+    <div style="text-align:center;color:#9A8570"><div style="font-size:15px">♥</div><div style="font-family:ui-monospace,monospace;font-size:8px;letter-spacing:.08em;margin-top:2px">HEALTH</div></div>
+    <div style="text-align:center;color:#9A8570"><div style="font-size:15px">€</div><div style="font-family:ui-monospace,monospace;font-size:8px;letter-spacing:.08em;margin-top:2px">MONEY</div></div>
+    <div style="text-align:center;color:#9A8570"><div style="font-size:15px">☑</div><div style="font-family:ui-monospace,monospace;font-size:8px;letter-spacing:.08em;margin-top:2px">ADMIN</div></div>
+    <div style="text-align:center;color:#9A8570"><div style="font-size:15px">Ω</div><div style="font-family:ui-monospace,monospace;font-size:8px;letter-spacing:.08em;margin-top:2px">LEARN</div></div>
+  </div>
+</div>
+</x-import>
+</div>
+
+<!-- 2b ledger phone -->
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><a class="dv-oid" href="#2b">2b</a>The Ledger</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="430px,900px">
+<div style="font-family:'Newsreader',Georgia,serif;color:#211B14;background:#F8F4EB;min-height:100%;display:flex;flex-direction:column">
+  <div style="padding:62px 18px 0;flex:1">
+    <div style="border-bottom:2px solid #211B14;padding-bottom:10px"><div style="font-size:22px;font-weight:600">The daily ledger</div><div style="font-family:system-ui,sans-serif;font-size:9.5px;letter-spacing:.12em;color:#6E6254;margin-top:3px">WED 05 AUG 2026 · READJUSTMENT W1 · DAY 2</div></div>
+    <div style="margin-top:12px;padding:13px 15px;background:#F1EADC;border-radius:8px">
+      <div style="font-family:system-ui,sans-serif;font-size:9px;letter-spacing:.16em;color:#93402A;font-weight:600">NEXT — TONIGHT'S SESSION</div>
+      <div style="font-size:18px;font-weight:500;margin-top:4px">Run 1, intervals <em style="color:#93402A">1:00 / 2:00 × 8</em></div>
+      <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:3px">with The History of Rome, ep. 41 · mobility after</div>
+      <div style="display:flex;gap:8px;margin-top:10px"><div style="flex:1;text-align:center;padding:9px;background:#211B14;color:#F8F4EB;font-family:system-ui,sans-serif;font-size:12px;font-weight:600;border-radius:6px">Begin</div><div style="padding:9px 14px;border:1px solid #B8AD9B;border-radius:6px;font-family:system-ui,sans-serif;font-size:12px;color:#6E6254">Defer</div></div>
+    </div>
+    <div style="display:flex;margin-top:12px;border-top:1px solid #E5DCCB;border-bottom:1px solid #E5DCCB">
+      <div style="flex:1;padding:10px 8px 10px 0;border-right:1px solid #E5DCCB"><div style="font-size:21px;font-weight:500">1,430</div><div style="font-family:system-ui,sans-serif;font-size:8.5px;letter-spacing:.1em;color:#6E6254">KCAL · 66%</div></div>
+      <div style="flex:1;padding:10px 8px;border-right:1px solid #E5DCCB"><div style="font-size:21px;font-weight:500">152g</div><div style="font-family:system-ui,sans-serif;font-size:8.5px;letter-spacing:.1em;color:#6E6254">PROTEIN 80%</div></div>
+      <div style="flex:1;padding:10px 8px;border-right:1px solid #E5DCCB"><div style="font-size:21px;font-weight:500">6,842</div><div style="font-family:system-ui,sans-serif;font-size:8.5px;letter-spacing:.1em;color:#6E6254">STEPS</div></div>
+      <div style="flex:1;padding:10px 0 10px 8px"><div style="font-size:21px;font-weight:500">2.5L</div><div style="font-family:system-ui,sans-serif;font-size:8.5px;letter-spacing:.1em;color:#6E6254">WATER</div></div>
+    </div>
+    <div style="margin-top:12px">
+      <div style="font-family:system-ui,sans-serif;font-size:9px;letter-spacing:.16em;color:#93402A;font-weight:600">AGENDA — 2 OF 6 DONE</div>
+      <div style="display:flex;gap:9px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#93402A">○</span><span style="font-size:14px">Travel voucher <span style="font-family:system-ui,sans-serif;font-size:8.5px;letter-spacing:.1em;color:#FFF;background:#93402A;border-radius:3px;padding:1px 5px">TODAY</span></span></div>
+      <div style="display:flex;gap:9px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#93402A">○</span><span style="font-size:14px">Car insurance, €89 — Friday</span></div>
+      <div style="display:flex;gap:9px;padding:8px 0;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#93402A">○</span><span style="font-size:14px">SPQR ch. 7 · twenty minutes of Latin</span></div>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:10px;padding-top:10px;border-top:1px solid #E5DCCB">
+      <div style="flex:1.2"><div style="font-family:system-ui,sans-serif;font-size:9px;letter-spacing:.14em;color:#6E6254">NET WORTH</div><div style="font-size:20px;font-weight:500;margin-top:2px">€148,230 <span style="font-family:system-ui,sans-serif;font-size:10px;color:#6E8B5E">▲1.2%</span></div></div>
+      <div style="flex:1;border-left:1px solid #E5DCCB;padding-left:12px"><div style="font-family:system-ui,sans-serif;font-size:9px;letter-spacing:.14em;color:#6E6254">VIA ROMANA</div><div style="font-size:13px;margin-top:2px">Week 3 of 8 · <em>8-day streak</em></div></div>
+    </div>
+    <div style="margin-top:10px;font-size:13px;font-style:italic;color:#6E6254;line-height:1.5">"Gutta cavat lapidem, non vi sed saepe cadendo."</div>
+  </div>
+  <div style="display:flex;justify-content:space-around;padding:10px 8px 6px;background:#F1EADC;border-top:1px solid #E5DCCB;font-family:system-ui,sans-serif">
+    <div style="text-align:center;color:#93402A"><div style="font-size:15px">◉</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px;font-weight:600">TODAY</div></div>
+    <div style="text-align:center;color:#B8AD9B"><div style="font-size:15px">♥</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">HEALTH</div></div>
+    <div style="text-align:center;color:#B8AD9B"><div style="font-size:15px">€</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">MONEY</div></div>
+    <div style="text-align:center;color:#B8AD9B"><div style="font-size:15px">☑</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">ADMIN</div></div>
+    <div style="text-align:center;color:#B8AD9B"><div style="font-size:15px">Ω</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">LEARN</div></div>
+  </div>
+</div>
+</x-import>
+</div>
+
+<!-- 2c midnight phone -->
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><a class="dv-oid" href="#2c">2c</a>Midnight Signal</div>
+<x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" dark="{{ true }}" hint-size="430px,900px">
+<div style="font-family:'Sora',system-ui,sans-serif;color:#E9F5EC;background:radial-gradient(500px 260px at 20% -8%, rgba(61,240,164,.16) 0%, rgba(8,16,9,0) 60%),radial-gradient(420px 220px at 92% -10%, rgba(199,125,255,.14) 0%, rgba(8,16,9,0) 55%),#081009;min-height:100%;display:flex;flex-direction:column">
+  <div style="padding:62px 18px 0;flex:1">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div><div style="font-size:19px;font-weight:600">Morning, Tom <span style="color:#3DF0A4">●</span></div><div style="font-size:10px;color:#8FB39D;margin-top:3px">Wed 05 Aug · Readj W1 · Day 2/63</div></div>
+      <div style="font-size:10px;font-weight:600;padding:6px 11px;border-radius:14px;background:rgba(255,194,75,.1);border:1px solid rgba(255,194,75,.4);color:#FFC24B">🔥 12</div>
+    </div>
+    <div style="margin-top:13px;background:rgba(61,240,164,.08);border:1px solid rgba(61,240,164,.35);border-radius:16px;padding:14px 16px;box-shadow:0 0 28px rgba(61,240,164,.1)">
+      <div style="font-size:9.5px;color:#3DF0A4;font-weight:600;letter-spacing:.12em">NEXT ACTION</div>
+      <div style="font-size:16.5px;font-weight:600;margin-top:5px">Run 1 · 1:00 / 2:00 × 8</div>
+      <div style="font-size:11px;color:#8FB39D;margin-top:3px">History of Rome ep. 41 · mobility after · sleep 2230</div>
+      <div style="display:flex;gap:8px;margin-top:11px"><div style="flex:1;text-align:center;padding:10px;border-radius:12px;background:#3DF0A4;color:#081009;font-weight:700;font-size:13px;box-shadow:0 0 18px rgba(61,240,164,.4)">Start ▶</div><div style="padding:10px 14px;border-radius:12px;background:#142A1E;font-size:13px;color:#8FB39D">Skip</div></div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <div style="flex:1;background:#0F1D15;border:1px solid #1F3B2C;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-size:13.5px;font-weight:700;color:#C6F062">1,430</div><div style="font-size:8px;color:#567A64;font-weight:600;margin-top:2px">KCAL 66%</div></div>
+      <div style="flex:1;background:#0F1D15;border:1px solid #1F3B2C;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-size:13.5px;font-weight:700;color:#3DF0A4">152g</div><div style="font-size:8px;color:#567A64;font-weight:600;margin-top:2px">PRO 80%</div></div>
+      <div style="flex:1;background:#0F1D15;border:1px solid #1F3B2C;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-size:13.5px;font-weight:700;color:#F0C24B">6.8k</div><div style="font-size:8px;color:#567A64;font-weight:600;margin-top:2px">STEPS</div></div>
+      <div style="flex:1;background:#0F1D15;border:1px solid #1F3B2C;border-radius:12px;padding:10px 6px;text-align:center"><div style="font-size:13.5px;font-weight:700;color:#4DD8FF">2.5L</div><div style="font-size:8px;color:#567A64;font-weight:600;margin-top:2px">WATER</div></div>
+    </div>
+    <div style="margin-top:12px;background:#0F1D15;border:1px solid #1F3B2C;border-radius:16px;padding:13px 16px">
+      <div style="display:flex;justify-content:space-between"><span style="font-size:9.5px;color:#567A64;font-weight:600;letter-spacing:.12em">ORDERS · 2/6</span><span style="font-size:9.5px;color:#3DF0A4;font-weight:600">−0.2 kg ahead</span></div>
+      <div style="display:grid;gap:6px;margin-top:9px">
+        <div style="display:flex;gap:9px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #F07B5B;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Travel voucher <span style="color:#F07B5B;font-size:9px;font-weight:600">TODAY</span></span></div>
+        <div style="display:flex;gap:9px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #FFC24B;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Car insurance €89 · Fri</span></div>
+        <div style="display:flex;gap:9px;align-items:center"><span style="width:16px;height:16px;border-radius:50%;border:2px solid #C77DFF;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">SPQR ch. 7 + Latin 20 min</span></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;margin-top:12px">
+      <div style="flex:1.2;background:#0F1D15;border:1px solid #1F3B2C;border-radius:16px;padding:12px 14px"><div style="font-size:9px;color:#567A64;font-weight:600;letter-spacing:.12em">NET WORTH</div><div style="font-size:16px;font-weight:700;margin-top:4px">€148.2k <span style="font-size:10px;color:#4DD8FF">▲1.2%</span></div></div>
+      <div style="flex:1;background:linear-gradient(150deg,rgba(199,125,255,.14),rgba(15,29,21,0) 60%),#0F1D15;border:1px solid #1F3B2C;border-radius:16px;padding:12px 14px"><div style="font-size:9px;color:#567A64;font-weight:600;letter-spacing:.12em">VIA ROMANA</div><div style="font-size:12px;margin-top:4px;color:#C77DFF;font-weight:600">W3/8 · 🔥 8</div></div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-around;padding:10px 8px 6px;background:#0B1710;border-top:1px solid #1F3B2C">
+    <div style="text-align:center;color:#3DF0A4"><div style="font-size:15px">◉</div><div style="font-size:8px;font-weight:600;letter-spacing:.08em;margin-top:2px">TODAY</div></div>
+    <div style="text-align:center;color:#567A64"><div style="font-size:15px">♥</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">HEALTH</div></div>
+    <div style="text-align:center;color:#567A64"><div style="font-size:15px">€</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">MONEY</div></div>
+    <div style="text-align:center;color:#567A64"><div style="font-size:15px">☑</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">ADMIN</div></div>
+    <div style="text-align:center;color:#567A64"><div style="font-size:15px">Ω</div><div style="font-size:8px;letter-spacing:.08em;margin-top:2px">LEARN</div></div>
+  </div>
+</div>
+</x-import>
+</div>
+
+</div>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Life OS · Daily Briefing — three visual directions</span></div>
+<p class="dv-intro">The one screen that tells you exactly what to do today, across all four modules: Health (your live Readjustment cycle), Money, Admin, and the new Learning module (Roman History doctorate track). Same content, three aesthetics — pick a direction and I'll build the phone view + full working version in it. Data shown is Wed 05 Aug 2026, day 2 of Readjustment.</p>
+<div style="display:flex;gap:8px;margin:0 0 24px;align-items:center">
+<span style="font:600 10px ui-monospace,Menlo,monospace;letter-spacing:.1em;color:rgba(0,0,0,.45)">VIEW</span>
+<button onClick="{{ setAll }}" style="{{ btnAll }}">All three</button>
+<button onClick="{{ setA }}" style="{{ btnA }}">1a Espresso</button>
+<button onClick="{{ setB }}" style="{{ btnB }}">1b Ledger</button>
+<button onClick="{{ setC }}" style="{{ btnC }}">1c Midnight</button>
+</div>
+<div class="dv-opts">
+
+<!-- ═══════════ 1a ESPRESSO COMMAND ═══════════ -->
+<sc-if value="{{ showA }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Espresso Command — your warm palette, brightened and evolved into a dense operations console</div>
+<div class="dv-card" style="width:1240px;background:#221912">
+<div style="font-family:'Space Grotesk',system-ui,sans-serif;color:#FFF6E8;background:radial-gradient(1100px 420px at 50% -12%, #33251A 0%, #221912 62%);padding:26px 30px 30px">
+  <div style="height:3px;border-radius:2px;background:linear-gradient(90deg,#FF7A55,#FFB340,#FF8FA8,#6FD6C0);opacity:.85;margin:-26px -30px 22px"></div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px">
+    <div>
+      <div style="font-size:24px;font-weight:700;letter-spacing:-0.01em">Good morning, Tom</div>
+      <div style="font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#CDB098;letter-spacing:.1em;margin-top:5px">WED 05 AUG 2026 · READJUSTMENT W1/9 · DAY 2/63 · TDY IN 5 DAYS</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;padding:7px 13px;border-radius:16px;background:rgba(169,220,140,.13);border:1px solid #A9DC8C;color:#A9DC8C">ON PLAN · −0.2 KG AHEAD</div>
+      <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.1em;padding:7px 13px;border-radius:16px;background:rgba(255,122,85,.13);border:1px solid #FF7A55;color:#FF7A55">🔥 12-DAY STREAK</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:20px">
+    <!-- briefing -->
+    <div style="grid-column:span 4;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FFC258;border-radius:14px;padding:18px">
+      <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570;margin-bottom:12px">TODAY'S ORDERS · 2 DONE / 6</div>
+      <div style="display:grid;gap:8px">
+        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:rgba(169,220,140,.13);border:1px solid rgba(169,220,140,.5)"><span style="width:18px;height:18px;border-radius:50%;background:#A9DC8C;color:#221912;font-family:ui-monospace,monospace;font-size:11px;text-align:center;line-height:18px;flex-shrink:0">✓</span><span style="font-size:13px;color:#CDB098;text-decoration:line-through">Weigh-in — 115.2 kg logged</span></div>
+        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:rgba(169,220,140,.13);border:1px solid rgba(169,220,140,.5)"><span style="width:18px;height:18px;border-radius:50%;background:#A9DC8C;color:#221912;font-family:ui-monospace,monospace;font-size:11px;text-align:center;line-height:18px;flex-shrink:0">✓</span><span style="font-size:13px;color:#CDB098;text-decoration:line-through">Creatine + IM8</span></div>
+        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:#392B20"><span style="width:18px;height:18px;border-radius:50%;border:2px solid #FF7A55;flex-shrink:0;box-sizing:border-box"></span><span style="font-size:13px">Run 1 · intervals — 1:00 / 2:00 × 8 <span style="font-family:ui-monospace,monospace;font-size:10px;color:#FF7A55">HEALTH</span></span></div>
+        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:#392B20"><span style="width:18px;height:18px;border-radius:50%;border:2px solid #6FD6C0;flex-shrink:0;box-sizing:border-box"></span><span style="font-size:13px">Submit travel voucher — due today <span style="font-family:ui-monospace,monospace;font-size:10px;color:#6FD6C0">ADMIN</span></span></div>
+        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:#392B20"><span style="width:18px;height:18px;border-radius:50%;border:2px solid #FFB340;flex-shrink:0;box-sizing:border-box"></span><span style="font-size:13px">Car insurance €89 — pay by Fri <span style="font-family:ui-monospace,monospace;font-size:10px;color:#FFB340">MONEY</span></span></div>
+        <div style="display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:#392B20"><span style="width:18px;height:18px;border-radius:50%;border:2px solid #FF8FA8;flex-shrink:0;box-sizing:border-box"></span><span style="font-size:13px">SPQR ch. 7 + 20 min Latin <span style="font-family:ui-monospace,monospace;font-size:10px;color:#FF8FA8">LEARN</span></span></div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(94,73,54,.4);font-size:12px;line-height:1.6;color:#CDB098"><span style="color:#FF7A55;font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.14em">ROMA · </span><em style="color:#FFF6E8">Gutta cavat lapidem, non vi sed saepe cadendo.</em> — the drop hollows the stone, not by force but by falling often.</div>
+    </div>
+    <!-- health -->
+    <div style="grid-column:span 8;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FF7A55;border-radius:14px;padding:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">01 HEALTH · RUN DAY · 2,150 KCAL · 190 P · 190 C</div><div style="font-family:ui-monospace,monospace;font-size:10px;color:#CDB098;letter-spacing:.1em">STANDARD MOBILITY · 25–30 MIN</div></div>
+      <div style="display:flex;gap:26px;margin-top:16px;align-items:center">
+        <div style="display:flex;gap:22px">
+          <div style="text-align:center"><svg width="86" height="86" style="transform:rotate(-90deg)"><circle cx="43" cy="43" r="37" fill="none" stroke="#443327" stroke-width="8"></circle><circle cx="43" cy="43" r="37" fill="none" stroke="#FFB340" stroke-width="8" stroke-linecap="round" stroke-dasharray="232.4" stroke-dashoffset="77.7"></circle></svg><div style="margin-top:-58px;font-family:ui-monospace,monospace;font-size:15px">1,430</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;margin-bottom:24px">/2,150</div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#CDB098">KCAL</div></div>
+          <div style="text-align:center"><svg width="86" height="86" style="transform:rotate(-90deg)"><circle cx="43" cy="43" r="37" fill="none" stroke="#443327" stroke-width="8"></circle><circle cx="43" cy="43" r="37" fill="none" stroke="#FF8FA8" stroke-width="8" stroke-linecap="round" stroke-dasharray="232.4" stroke-dashoffset="46.5"></circle></svg><div style="margin-top:-58px;font-family:ui-monospace,monospace;font-size:15px">152</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;margin-bottom:24px">/190g</div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#CDB098">PROTEIN</div></div>
+          <div style="text-align:center"><svg width="86" height="86" style="transform:rotate(-90deg)"><circle cx="43" cy="43" r="37" fill="none" stroke="#443327" stroke-width="8"></circle><circle cx="43" cy="43" r="37" fill="none" stroke="#FF7A55" stroke-width="8" stroke-linecap="round" stroke-dasharray="232.4" stroke-dashoffset="74.4"></circle></svg><div style="margin-top:-58px;font-family:ui-monospace,monospace;font-size:15px">6.8k</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;margin-bottom:24px">/10k</div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#CDB098">STEPS</div></div>
+          <div style="text-align:center"><svg width="86" height="86" style="transform:rotate(-90deg)"><circle cx="43" cy="43" r="37" fill="none" stroke="#443327" stroke-width="8"></circle><circle cx="43" cy="43" r="37" fill="none" stroke="#6FD6C0" stroke-width="8" stroke-linecap="round" stroke-dasharray="232.4" stroke-dashoffset="87.2"></circle></svg><div style="margin-top:-58px;font-family:ui-monospace,monospace;font-size:15px">2.5</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#9A8570;margin-bottom:24px">/4L</div><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#CDB098">WATER</div></div>
+        </div>
+        <div style="flex:1;background:#392B20;border-radius:12px;padding:14px 16px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,monospace;font-size:10px;letter-spacing:.14em;color:#9A8570">GLIDE PATH · 115.6 → 105.0</span><span style="font-family:ui-monospace,monospace;font-size:11px;color:#A9DC8C">−0.2 KG AHEAD</span></div>
+          <svg width="100%" height="64" viewBox="0 0 320 64" preserveAspectRatio="none" style="margin-top:8px;display:block"><line x1="0" y1="8" x2="320" y2="56" stroke="#9A8570" stroke-width="1" stroke-dasharray="4 4"></line><polyline points="0,10 12,12 24,9 36,13 48,11" fill="none" stroke="#FFC258" stroke-width="2.5" stroke-linecap="round"></polyline><circle cx="48" cy="11" r="3.5" fill="#FFC258"></circle></svg>
+          <div style="display:flex;gap:20px;margin-top:6px;font-family:ui-monospace,monospace;font-size:11px;color:#CDB098"><span><span style="color:#FFF6E8">115.2</span> today</span><span><span style="color:#FFF6E8">115.3</span> 7-d avg</span><span><span style="color:#FFF6E8">10.3</span> kg to go</span><span><span style="color:#FFF6E8">05 OCT</span> target</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- money -->
+    <div style="grid-column:span 5;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FFB340;border-radius:14px;padding:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">02 MONEY · NET WORTH</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#A9DC8C">▲ 1.2% MTD</span></div>
+      <div style="display:flex;align-items:flex-end;gap:14px;margin-top:8px"><div style="font-family:ui-monospace,monospace;font-size:32px;letter-spacing:-0.02em">€148,230</div><svg width="110" height="34" viewBox="0 0 110 34"><polyline points="0,26 14,24 28,27 42,20 56,22 70,15 84,17 98,10 110,8" fill="none" stroke="#FFB340" stroke-width="2" stroke-linecap="round"></polyline></svg></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px">
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">CHECKING</div><div style="font-family:ui-monospace,monospace;font-size:15px;margin-top:3px">€4,210</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">SAVINGS</div><div style="font-family:ui-monospace,monospace;font-size:15px;margin-top:3px">€22,400</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">BROKERAGE</div><div style="font-family:ui-monospace,monospace;font-size:15px;margin-top:3px">€61,850 <span style="font-size:10px;color:#A9DC8C">▲2.1%</span></div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">TSP / RETIREMENT</div><div style="font-family:ui-monospace,monospace;font-size:15px;margin-top:3px">€59,770</div></div>
+      </div>
+      <div style="margin-top:12px;padding-top:10px;border-top:1px solid rgba(94,73,54,.4)">
+        <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0"><span>Car insurance <span style="font-family:ui-monospace,monospace;font-size:10px;color:#FF6B4A">DUE FRI</span></span><span style="font-family:ui-monospace,monospace">€89</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0"><span>Internet · 20 Aug</span><span style="font-family:ui-monospace,monospace">€45</span></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0"><span>Rent · 28 Aug</span><span style="font-family:ui-monospace,monospace">€1,450</span></div>
+      </div>
+    </div>
+    <!-- admin -->
+    <div style="grid-column:span 3;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #6FD6C0;border-radius:14px;padding:18px">
+      <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570;margin-bottom:12px">03 ADMIN · 3 OPEN</div>
+      <div style="display:grid;gap:8px">
+        <div style="background:rgba(255,107,74,.13);border:1px solid #FF6B4A;border-radius:10px;padding:9px 11px"><div style="font-size:13px">Travel voucher</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#FF6B4A;margin-top:2px;letter-spacing:.1em">DUE TODAY</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:9px 11px"><div style="font-size:13px">Car registration</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#CDB098;margin-top:2px;letter-spacing:.1em">FRI · ANNUAL</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:9px 11px"><div style="font-size:13px">Dentist appointment</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#CDB098;margin-top:2px;letter-spacing:.1em">THIS WEEK</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:9px 11px;opacity:.6"><div style="font-size:13px;text-decoration:line-through">Meal prep</div><div style="font-family:ui-monospace,monospace;font-size:9px;color:#A9DC8C;margin-top:2px;letter-spacing:.1em">✓ SUN · WEEKLY</div></div>
+      </div>
+      <div style="margin-top:12px;font-family:ui-monospace,monospace;font-size:10px;color:#FF8FA8;letter-spacing:.08em;line-height:1.6">⚑ TDY 10–14 AUG<br>PACK LIST OPENS SAT</div>
+    </div>
+    <!-- learning -->
+    <div style="grid-column:span 4;background:#2C211A;border:1px solid rgba(94,73,54,.4);border-left:3px solid #FF8FA8;border-radius:14px;padding:18px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:ui-monospace,Menlo,monospace;font-size:10px;letter-spacing:.16em;color:#9A8570">04 LEARNING · VIA ROMANA</span><span style="font-family:ui-monospace,monospace;font-size:10px;color:#FF8FA8">🔥 8-DAY STREAK</span></div>
+      <div style="margin-top:12px;background:#392B20;border-radius:12px;padding:12px 14px">
+        <div style="display:flex;justify-content:space-between;font-size:12px"><span style="color:#CDB098">Doctorate track · Phase 1: Foundations</span><span style="font-family:ui-monospace,monospace;color:#FF8FA8">3/8 WK</span></div>
+        <div style="height:6px;border-radius:3px;background:#443327;margin-top:8px;overflow:hidden"><div style="width:37%;height:100%;background:linear-gradient(90deg,#FF8FA8,#FFC258)"></div></div>
+        <div style="font-size:11px;color:#9A8570;margin-top:7px">Now: language prereq audit → Latin 20 min/day · next: shortlist 5 programs</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px">
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">READING</div><div style="font-size:13px;margin-top:3px">SPQR — Mary Beard</div><div style="font-family:ui-monospace,monospace;font-size:10px;color:#FF8FA8;margin-top:3px">62% · CH 7 TONIGHT</div></div>
+        <div style="background:#392B20;border-radius:10px;padding:10px 12px"><div style="font-family:ui-monospace,monospace;font-size:9px;letter-spacing:.12em;color:#9A8570">QUEUED · PODCAST</div><div style="font-size:13px;margin-top:3px">The History of Rome</div><div style="font-family:ui-monospace,monospace;font-size:10px;color:#CDB098;margin-top:3px">EP 41 · 34 MIN · RUN PAIRING</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</sc-if>
+<!-- ═══════════ 1b LEDGER ═══════════ -->
+<sc-if value="{{ showB }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>The Ledger — warm paper, serif numerals, broadsheet columns; calm but just as dense</div>
+<div class="dv-card" style="width:1240px;background:#F8F4EB">
+<div style="font-family:'Newsreader',Georgia,serif;color:#211B14;padding:30px 36px 34px">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid #211B14;padding-bottom:14px">
+    <div style="font-size:30px;font-weight:600;letter-spacing:-0.01em">Life OS <span style="font-style:italic;font-weight:400;color:#93402A">— the daily ledger</span></div>
+    <div style="font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.14em;color:#6E6254">WEDNESDAY 05 AUGUST 2026 · READJUSTMENT, WEEK 1 OF 9 · DAY 2</div>
+  </div>
+  <div style="display:flex;gap:0;border-bottom:1px solid #E5DCCB">
+    <div style="flex:1.1;padding:18px 24px 18px 0;border-right:1px solid #E5DCCB">
+      <div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.18em;color:#93402A;font-weight:600">TODAY'S AGENDA</div>
+      <div style="margin-top:12px">
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#B8AD9B">✓</span><span style="font-size:15px;color:#B8AD9B;text-decoration:line-through">Weigh-in — 115.2 kg</span></div>
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;color:#B8AD9B">✓</span><span style="font-size:15px;color:#B8AD9B;text-decoration:line-through">Creatine &amp; IM8</span></div>
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#93402A">○</span><span style="font-size:15px">Run 1, intervals — <em>1:00 / 2:00 × 8</em></span></div>
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#93402A">○</span><span style="font-size:15px">Submit travel voucher <span style="font-family:system-ui,sans-serif;font-size:9px;letter-spacing:.12em;color:#93402A">DUE TODAY</span></span></div>
+        <div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px dotted #E5DCCB;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#93402A">○</span><span style="font-size:15px">Pay car insurance, €89</span></div>
+        <div style="display:flex;gap:10px;padding:8px 0;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:11px;color:#93402A">○</span><span style="font-size:15px">SPQR, chapter 7 · twenty minutes of Latin</span></div>
+      </div>
+      <div style="margin-top:16px;padding:14px 16px;background:#F1EADC;border-radius:6px">
+        <div style="font-size:16px;font-style:italic;line-height:1.5">"Gutta cavat lapidem, non vi sed saepe cadendo."</div>
+        <div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:6px">The drop hollows the stone — not by force, but by falling often. — Ovid</div>
+      </div>
+    </div>
+    <div style="flex:2;padding:18px 0 18px 24px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.18em;color:#93402A;font-weight:600">HEALTH — RUN DAY</div><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.1em;color:#6E6254">2,150 KCAL · 190 P · 190 C · STANDARD MOBILITY</div></div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:14px">
+        <div style="border-right:1px solid #E5DCCB;padding-right:18px"><div style="font-size:38px;font-weight:500;letter-spacing:-0.02em">1,430</div><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.12em;color:#6E6254">OF 2,150 KCAL</div><div style="height:3px;background:#E5DCCB;margin-top:8px"><div style="width:66%;height:100%;background:#B98A2F"></div></div></div>
+        <div style="border-right:1px solid #E5DCCB;padding:0 18px"><div style="font-size:38px;font-weight:500;letter-spacing:-0.02em">152<span style="font-size:20px;color:#6E6254">g</span></div><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.12em;color:#6E6254">OF 190 PROTEIN</div><div style="height:3px;background:#E5DCCB;margin-top:8px"><div style="width:80%;height:100%;background:#93402A"></div></div></div>
+        <div style="border-right:1px solid #E5DCCB;padding:0 18px"><div style="font-size:38px;font-weight:500;letter-spacing:-0.02em">6,842</div><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.12em;color:#6E6254">OF 10,000 STEPS</div><div style="height:3px;background:#E5DCCB;margin-top:8px"><div style="width:68%;height:100%;background:#6E8B5E"></div></div></div>
+        <div style="padding-left:18px"><div style="font-size:38px;font-weight:500;letter-spacing:-0.02em">2.5<span style="font-size:20px;color:#6E6254">L</span></div><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.12em;color:#6E6254">OF 4 L WATER</div><div style="height:3px;background:#E5DCCB;margin-top:8px"><div style="width:62%;height:100%;background:#5E7B8B"></div></div></div>
+      </div>
+      <div style="display:flex;gap:24px;margin-top:20px;align-items:flex-end">
+        <div style="flex:1.4">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.14em;color:#6E6254">GLIDE PATH · 115.6 → 105.0 KG</span><span style="font-family:system-ui,sans-serif;font-size:11px;color:#6E8B5E;font-weight:600">0.2 kg ahead of plan</span></div>
+          <svg width="100%" height="70" viewBox="0 0 380 70" preserveAspectRatio="none" style="margin-top:8px;display:block"><line x1="0" y1="10" x2="380" y2="62" stroke="#B8AD9B" stroke-width="1" stroke-dasharray="5 4"></line><polyline points="0,12 15,14 30,11 45,15 60,13" fill="none" stroke="#93402A" stroke-width="2.5" stroke-linecap="round"></polyline><circle cx="60" cy="13" r="3.5" fill="#93402A"></circle></svg>
+          <div style="display:flex;gap:22px;margin-top:6px;font-family:system-ui,sans-serif;font-size:11px;color:#6E6254"><span><strong style="color:#211B14">115.3</strong> 7-day avg</span><span><strong style="color:#211B14">10.3 kg</strong> to go</span><span>target <strong style="color:#211B14">5 Oct</strong></span></div>
+        </div>
+        <div style="flex:1;border-left:1px solid #E5DCCB;padding-left:24px">
+          <div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.14em;color:#6E6254">TONIGHT'S SESSION</div>
+          <div style="font-size:18px;font-weight:500;margin-top:6px">Intervals, week one <span style="font-style:italic;color:#93402A">then standard mobility</span></div>
+          <div style="font-family:system-ui,sans-serif;font-size:12px;color:#6E6254;line-height:1.6;margin-top:6px">1:00 run / 2:00 walk × 8 · pair with The History of Rome, ep. 41 · couch stretch after</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;gap:0">
+    <div style="flex:1.35;padding:18px 24px 4px 0;border-right:1px solid #E5DCCB">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.18em;color:#93402A;font-weight:600">MONEY</div><div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E8B5E;font-weight:600">▲ 1.2% this month</div></div>
+      <div style="display:flex;align-items:flex-end;gap:16px;margin-top:8px"><div style="font-size:44px;font-weight:500;letter-spacing:-0.02em">€148,230</div><svg width="120" height="38" viewBox="0 0 120 38"><polyline points="0,30 16,27 32,30 48,22 64,25 80,17 96,19 112,11 120,9" fill="none" stroke="#B98A2F" stroke-width="2" stroke-linecap="round"></polyline></svg></div>
+      <table style="width:100%;border-collapse:collapse;margin-top:12px;font-size:14px">
+        <tr style="border-bottom:1px dotted #E5DCCB"><td style="padding:7px 0;color:#6E6254">Checking</td><td style="text-align:right;padding:7px 0">€4,210</td><td style="text-align:right;padding:7px 0;font-family:system-ui,sans-serif;font-size:10px;color:#B8AD9B;width:70px">—</td></tr>
+        <tr style="border-bottom:1px dotted #E5DCCB"><td style="padding:7px 0;color:#6E6254">Savings</td><td style="text-align:right;padding:7px 0">€22,400</td><td style="text-align:right;padding:7px 0;font-family:system-ui,sans-serif;font-size:10px;color:#6E8B5E">+0.3%</td></tr>
+        <tr style="border-bottom:1px dotted #E5DCCB"><td style="padding:7px 0;color:#6E6254">Brokerage</td><td style="text-align:right;padding:7px 0">€61,850</td><td style="text-align:right;padding:7px 0;font-family:system-ui,sans-serif;font-size:10px;color:#6E8B5E">+2.1%</td></tr>
+        <tr><td style="padding:7px 0;color:#6E6254">TSP / retirement</td><td style="text-align:right;padding:7px 0">€59,770</td><td style="text-align:right;padding:7px 0;font-family:system-ui,sans-serif;font-size:10px;color:#6E8B5E">+1.4%</td></tr>
+      </table>
+      <div style="margin-top:10px;padding-top:10px;border-top:1px solid #E5DCCB;font-family:system-ui,sans-serif;font-size:12px;color:#6E6254">Due soon — <strong style="color:#93402A">car insurance €89 Fri</strong> · internet €45 on the 20th · rent €1,450 on the 28th</div>
+    </div>
+    <div style="flex:1;padding:18px 24px 4px;border-right:1px solid #E5DCCB">
+      <div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.18em;color:#93402A;font-weight:600">ADMIN — 3 OPEN</div>
+      <div style="margin-top:10px">
+        <div style="padding:9px 0;border-bottom:1px dotted #E5DCCB"><div style="font-size:15px">Travel voucher <span style="font-family:system-ui,sans-serif;font-size:9px;letter-spacing:.12em;color:#FFF;background:#93402A;border-radius:3px;padding:2px 6px;vertical-align:2px">TODAY</span></div><div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:2px">DTS closes 1700 — fifteen minutes</div></div>
+        <div style="padding:9px 0;border-bottom:1px dotted #E5DCCB"><div style="font-size:15px">Car registration</div><div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:2px">Friday · annual</div></div>
+        <div style="padding:9px 0;border-bottom:1px dotted #E5DCCB"><div style="font-size:15px">Book dentist</div><div style="font-family:system-ui,sans-serif;font-size:11px;color:#6E6254;margin-top:2px">this week · 6-monthly</div></div>
+        <div style="padding:9px 0;color:#B8AD9B"><div style="font-size:15px;text-decoration:line-through">Meal prep</div><div style="font-family:system-ui,sans-serif;font-size:11px;margin-top:2px">done Sunday · weekly</div></div>
+      </div>
+      <div style="margin-top:10px;font-family:system-ui,sans-serif;font-size:11px;color:#93402A;font-weight:600">⚑ TDY Grafenwöhr, 10–14 Aug — pack list opens Saturday</div>
+    </div>
+    <div style="flex:1.1;padding:18px 0 4px 24px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.18em;color:#93402A;font-weight:600">LEARNING — VIA ROMANA</div><div style="font-family:system-ui,sans-serif;font-size:11px;color:#B98A2F;font-weight:600">8-day streak</div></div>
+      <div style="margin-top:10px;font-size:15px;line-height:1.55">Doctorate track, <em>Phase I — Foundations.</em> Week 3 of 8: language prerequisite audit. Next milestone: shortlist five programs.</div>
+      <div style="height:4px;background:#E5DCCB;margin-top:10px"><div style="width:37%;height:100%;background:#93402A"></div></div>
+      <div style="margin-top:14px;padding:12px 14px;background:#F1EADC;border-radius:6px">
+        <div style="font-family:system-ui,sans-serif;font-size:10px;letter-spacing:.14em;color:#6E6254">ON THE NIGHTSTAND</div>
+        <div style="font-size:16px;margin-top:4px;font-weight:500">SPQR — Mary Beard <span style="font-family:system-ui,sans-serif;font-size:11px;color:#93402A">62% · ch. 7 tonight</span></div>
+        <div style="font-family:system-ui,sans-serif;font-size:12px;color:#6E6254;margin-top:6px">In the ears: The History of Rome, ep. 41 — pairs with tonight's run (34 min)</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</sc-if>
+<!-- ═══════════ 1c MIDNIGHT SIGNAL ═══════════ -->
+<sc-if value="{{ showC }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Midnight Signal — deep green-black with mint glow, glassy cards — multi-neon glow: mint, cyan, violet, amber</div>
+<div class="dv-card" style="width:1240px;background:#081009">
+<div style="font-family:'Sora',system-ui,sans-serif;color:#E9F5EC;background:radial-gradient(900px 400px at 18% -10%, rgba(61,240,164,.14) 0%, rgba(8,16,9,0) 60%),radial-gradient(700px 360px at 88% -14%, rgba(199,125,255,.12) 0%, rgba(8,16,9,0) 55%),#081009;padding:26px 30px 30px">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px">
+    <div>
+      <div style="font-size:23px;font-weight:600;letter-spacing:-0.01em">Good morning, Tom <span style="color:#3DF0A4">●</span></div>
+      <div style="font-size:11.5px;color:#8FB39D;margin-top:5px">Wed 05 Aug · Readjustment W1/9 · Day 2 of 63 · TDY in 5 days</div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <div style="padding:9px 16px;border-radius:20px;background:rgba(61,240,164,.1);border:1px solid rgba(61,240,164,.4);color:#3DF0A4;font-size:11px;font-weight:600;box-shadow:0 0 24px rgba(61,240,164,.15)">On plan · 0.2 kg ahead</div>
+      <div style="padding:9px 16px;border-radius:20px;background:rgba(255,194,75,.1);border:1px solid rgba(255,194,75,.4);color:#FFC24B;font-size:11px;font-weight:600">🔥 12-day streak</div>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:20px">
+    <div style="grid-column:span 8;display:grid;gap:14px">
+      <!-- health -->
+      <div style="background:linear-gradient(160deg,#122519 0%,#0F1D15 70%);border:1px solid #1F3B2C;border-radius:20px;padding:20px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:11px;font-weight:600;letter-spacing:.12em;color:#567A64">HEALTH · RUN DAY</span><span style="font-size:11px;color:#8FB39D">2,150 kcal · 190 P · standard mobility</span></div>
+        <div style="display:flex;gap:24px;margin-top:16px;align-items:center">
+          <div style="position:relative;width:132px;height:132px;flex-shrink:0"><svg width="132" height="132" style="transform:rotate(-90deg)"><circle cx="66" cy="66" r="57" fill="none" stroke="#142A1E" stroke-width="11"></circle><circle cx="66" cy="66" r="57" fill="none" stroke="#3DF0A4" stroke-width="11" stroke-linecap="round" stroke-dasharray="358.1" stroke-dashoffset="121.8" style="filter:drop-shadow(0 0 8px rgba(61,240,164,.6))"></circle></svg><div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center"><div style="font-size:24px;font-weight:700">66%</div><div style="font-size:10px;color:#8FB39D">day complete</div></div></div>
+          <div style="flex:1;display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+            <div style="background:#142A1E;border-radius:14px;padding:12px 14px"><div style="font-size:10px;color:#567A64;font-weight:600">KCAL</div><div style="font-size:19px;font-weight:700;margin-top:4px">1,430</div><div style="height:4px;border-radius:2px;background:#0F1D15;margin-top:8px"><div style="width:66%;height:100%;border-radius:2px;background:#C6F062"></div></div><div style="font-size:10px;color:#8FB39D;margin-top:5px">of 2,150</div></div>
+            <div style="background:#142A1E;border-radius:14px;padding:12px 14px"><div style="font-size:10px;color:#567A64;font-weight:600">PROTEIN</div><div style="font-size:19px;font-weight:700;margin-top:4px">152g</div><div style="height:4px;border-radius:2px;background:#0F1D15;margin-top:8px"><div style="width:80%;height:100%;border-radius:2px;background:#3DF0A4"></div></div><div style="font-size:10px;color:#8FB39D;margin-top:5px">of 190</div></div>
+            <div style="background:#142A1E;border-radius:14px;padding:12px 14px"><div style="font-size:10px;color:#567A64;font-weight:600">STEPS</div><div style="font-size:19px;font-weight:700;margin-top:4px">6.8k</div><div style="height:4px;border-radius:2px;background:#0F1D15;margin-top:8px"><div style="width:68%;height:100%;border-radius:2px;background:#F0C24B"></div></div><div style="font-size:10px;color:#8FB39D;margin-top:5px">of 10k</div></div>
+            <div style="background:#142A1E;border-radius:14px;padding:12px 14px"><div style="font-size:10px;color:#567A64;font-weight:600">WATER</div><div style="font-size:19px;font-weight:700;margin-top:4px">2.5L</div><div style="height:4px;border-radius:2px;background:#0F1D15;margin-top:8px"><div style="width:62%;height:100%;border-radius:2px;background:#5BD0F0"></div></div><div style="font-size:10px;color:#8FB39D;margin-top:5px">of 4</div></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:14px;margin-top:16px">
+          <div style="flex:1.4;background:#0C1810;border:1px solid #1F3B2C;border-radius:14px;padding:12px 16px">
+            <div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#567A64;font-weight:600;letter-spacing:.1em">GLIDE PATH 115.6 → 105.0</span><span style="font-size:11px;color:#3DF0A4;font-weight:600">−0.2 kg ahead</span></div>
+            <svg width="100%" height="52" viewBox="0 0 340 52" preserveAspectRatio="none" style="margin-top:6px;display:block"><line x1="0" y1="6" x2="340" y2="46" stroke="#2A4A38" stroke-width="1" stroke-dasharray="4 4"></line><polyline points="0,8 13,10 26,7 39,11 52,9" fill="none" stroke="#3DF0A4" stroke-width="2.5" stroke-linecap="round" style="filter:drop-shadow(0 0 5px rgba(61,240,164,.7))"></polyline><circle cx="52" cy="9" r="3.5" fill="#3DF0A4"></circle></svg>
+            <div style="display:flex;gap:18px;font-size:11px;color:#8FB39D;margin-top:4px"><span><strong style="color:#E9F5EC">115.3</strong> 7-d avg</span><span><strong style="color:#E9F5EC">10.3 kg</strong> to go</span><span>target <strong style="color:#E9F5EC">05 Oct</strong></span></div>
+          </div>
+          <div style="flex:1;background:rgba(61,240,164,.07);border:1px solid rgba(61,240,164,.3);border-radius:14px;padding:12px 16px">
+            <div style="font-size:10px;color:#3DF0A4;font-weight:600;letter-spacing:.1em">TONIGHT</div>
+            <div style="font-size:14px;font-weight:600;margin-top:5px">Run 1 · 1:00 / 2:00 × 8</div>
+            <div style="font-size:11.5px;color:#8FB39D;margin-top:4px;line-height:1.5">Pair with History of Rome ep. 41 · standard mobility after · sleep by 2230</div>
+          </div>
+        </div>
+      </div>
+      <!-- money -->
+      <div style="background:#0F1D15;border:1px solid #1F3B2C;border-radius:20px;padding:20px;display:flex;gap:22px">
+        <div style="flex:1.2">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:11px;font-weight:600;letter-spacing:.12em;color:#567A64">MONEY · NET WORTH</span><span style="font-size:11px;color:#4DD8FF;font-weight:600">▲ 1.2% MTD</span></div>
+          <div style="font-size:34px;font-weight:700;letter-spacing:-0.02em;margin-top:6px">€148,230</div>
+          <svg width="100%" height="46" viewBox="0 0 300 46" preserveAspectRatio="none" style="margin-top:6px;display:block"><defs><linearGradient id="mg1c" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(77,216,255,.35)"></stop><stop offset="100%" stop-color="rgba(77,216,255,0)"></stop></linearGradient></defs><polyline points="0,36 38,32 76,36 114,26 152,29 190,19 228,22 266,12 300,9" fill="none" stroke="#4DD8FF" stroke-width="2.5" stroke-linecap="round" style="filter:drop-shadow(0 0 5px rgba(77,216,255,.7))"></polyline><polygon points="0,36 38,32 76,36 114,26 152,29 190,19 228,22 266,12 300,9 300,46 0,46" fill="url(#mg1c)"></polygon></svg>
+        </div>
+        <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:9px;align-content:start">
+          <div style="background:#142A1E;border-radius:12px;padding:10px 12px"><div style="font-size:9.5px;color:#567A64;font-weight:600">CHECKING</div><div style="font-size:15px;font-weight:600;margin-top:3px">€4,210</div></div>
+          <div style="background:#142A1E;border-radius:12px;padding:10px 12px"><div style="font-size:9.5px;color:#567A64;font-weight:600">SAVINGS</div><div style="font-size:15px;font-weight:600;margin-top:3px">€22,400</div></div>
+          <div style="background:#142A1E;border-radius:12px;padding:10px 12px"><div style="font-size:9.5px;color:#567A64;font-weight:600">BROKERAGE</div><div style="font-size:15px;font-weight:600;margin-top:3px">€61,850 <span style="font-size:10px;color:#4DD8FF">▲</span></div></div>
+          <div style="background:#142A1E;border-radius:12px;padding:10px 12px"><div style="font-size:9.5px;color:#567A64;font-weight:600">TSP</div><div style="font-size:15px;font-weight:600;margin-top:3px">€59,770</div></div>
+        </div>
+        <div style="flex:.9;border-left:1px solid #1F3B2C;padding-left:20px">
+          <div style="font-size:10px;color:#567A64;font-weight:600;letter-spacing:.1em">BILLS RADAR</div>
+          <div style="display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0;border-bottom:1px solid #142A1E"><span>Car insurance <span style="color:#F07B5B;font-size:10px;font-weight:600">FRI</span></span><span style="font-weight:600">€89</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0;border-bottom:1px solid #142A1E"><span style="color:#8FB39D">Internet · 20th</span><span>€45</span></div>
+          <div style="display:flex;justify-content:space-between;font-size:12.5px;padding:7px 0"><span style="color:#8FB39D">Rent · 28th</span><span>€1,450</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="grid-column:span 4;display:grid;gap:14px;align-content:start">
+      <!-- orders -->
+      <div style="background:#0F1D15;border:1px solid #1F3B2C;border-radius:20px;padding:20px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:11px;font-weight:600;letter-spacing:.12em;color:#567A64">TODAY'S ORDERS</span><span style="font-size:11px;color:#3DF0A4;font-weight:600">2/6</span></div>
+        <div style="display:grid;gap:7px;margin-top:12px">
+          <div style="display:flex;gap:10px;align-items:center;padding:9px 11px;border-radius:12px;background:rgba(61,240,164,.07)"><span style="width:17px;height:17px;border-radius:50%;background:#3DF0A4;color:#081009;font-size:10px;text-align:center;line-height:17px;font-weight:700;flex-shrink:0">✓</span><span style="font-size:12.5px;color:#567A64;text-decoration:line-through">Weigh-in 115.2 kg</span></div>
+          <div style="display:flex;gap:10px;align-items:center;padding:9px 11px;border-radius:12px;background:rgba(61,240,164,.07)"><span style="width:17px;height:17px;border-radius:50%;background:#3DF0A4;color:#081009;font-size:10px;text-align:center;line-height:17px;font-weight:700;flex-shrink:0">✓</span><span style="font-size:12.5px;color:#567A64;text-decoration:line-through">Creatine + IM8</span></div>
+          <div style="display:flex;gap:10px;align-items:center;padding:9px 11px;border-radius:12px;background:#142A1E"><span style="width:17px;height:17px;border-radius:50%;border:2px solid #C6F062;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Run 1 · intervals ×8</span></div>
+          <div style="display:flex;gap:10px;align-items:center;padding:9px 11px;border-radius:12px;background:#142A1E"><span style="width:17px;height:17px;border-radius:50%;border:2px solid #F07B5B;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Travel voucher <span style="color:#F07B5B;font-size:10px;font-weight:600">TODAY</span></span></div>
+          <div style="display:flex;gap:10px;align-items:center;padding:9px 11px;border-radius:12px;background:#142A1E"><span style="width:17px;height:17px;border-radius:50%;border:2px solid #F0C24B;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">Car insurance €89</span></div>
+          <div style="display:flex;gap:10px;align-items:center;padding:9px 11px;border-radius:12px;background:#142A1E"><span style="width:17px;height:17px;border-radius:50%;border:2px solid #C77DFF;box-sizing:border-box;flex-shrink:0"></span><span style="font-size:12.5px">SPQR ch. 7 · Latin 20 min</span></div>
+        </div>
+      </div>
+      <!-- admin mini -->
+      <div style="background:#0F1D15;border:1px solid #1F3B2C;border-radius:20px;padding:18px 20px">
+        <div style="font-size:11px;font-weight:600;letter-spacing:.12em;color:#567A64">ADMIN · TDY IN 5 DAYS</div>
+        <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap">
+          <span style="font-size:11px;padding:6px 11px;border-radius:14px;background:rgba(240,123,91,.12);border:1px solid rgba(240,123,91,.4);color:#F07B5B;font-weight:600">Voucher · today</span>
+          <span style="font-size:11px;padding:6px 11px;border-radius:14px;background:#142A1E;color:#8FB39D">Registration · Fri</span>
+          <span style="font-size:11px;padding:6px 11px;border-radius:14px;background:#142A1E;color:#8FB39D">Dentist · this wk</span>
+          <span style="font-size:11px;padding:6px 11px;border-radius:14px;background:#142A1E;color:#567A64;text-decoration:line-through">Meal prep ✓</span>
+        </div>
+      </div>
+      <!-- learning -->
+      <div style="background:linear-gradient(150deg,rgba(199,125,255,.14),rgba(15,29,21,0) 55%),#0F1D15;border:1px solid #1F3B2C;border-radius:20px;padding:18px 20px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:11px;font-weight:600;letter-spacing:.12em;color:#567A64">LEARNING · VIA ROMANA</span><span style="font-size:11px;color:#FF6BD6;font-weight:600">🔥 8 days</span></div>
+        <div style="margin-top:10px;font-size:13px;line-height:1.5">Doctorate track · <strong>Phase I Foundations</strong></div>
+        <div style="height:6px;border-radius:3px;background:#142A1E;margin-top:8px"><div style="width:37%;height:100%;border-radius:3px;background:linear-gradient(90deg,#C77DFF,#FF6BD6);box-shadow:0 0 10px rgba(255,107,214,.5)"></div></div>
+        <div style="font-size:11px;color:#8FB39D;margin-top:6px">Week 3/8 · Latin audit · next: shortlist 5 programs</div>
+        <div style="display:grid;gap:8px;margin-top:12px">
+          <div style="background:#142A1E;border-radius:12px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:12.5px;font-weight:600">SPQR — Mary Beard</div><div style="font-size:10.5px;color:#8FB39D;margin-top:2px">ch. 7 tonight</div></div><span style="font-size:12px;color:#C77DFF;font-weight:700">62%</span></div>
+          <div style="background:#142A1E;border-radius:12px;padding:10px 12px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:12.5px;font-weight:600">The History of Rome</div><div style="font-size:10.5px;color:#8FB39D;margin-top:2px">ep. 41 · pairs with run</div></div><span style="font-size:12px;color:#FF6BD6;font-weight:700">34 min</span></div>
+        </div>
+        <div style="margin-top:12px;font-size:12px;font-style:italic;color:#8FB39D;line-height:1.5">"Gutta cavat lapidem, non vi sed saepe cadendo." — Ovid</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</sc-if>
+</div>
+<p class="dv-next">Try next: "build out <a class="dv-oid" href="#1b">1b</a> — phone view + the module screens" · "mix <a class="dv-oid" href="#1a">1a</a>'s palette with <a class="dv-oid" href="#1c">1c</a>'s layout" · "new directions"</p>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { view: "all" };
+  renderVals() {
+    const v = this.state.view;
+    const btn = (on) => ({ padding: "7px 14px", borderRadius: 16, border: "1px solid rgba(0,0,0,.18)",
+      background: on ? "#1a1a1a" : "#fff", color: on ? "#fff" : "#1a1a1a",
+      font: "600 11px system-ui,sans-serif", cursor: "pointer" });
+    return {
+      showA: v === "all" || v === "1a",
+      showB: v === "all" || v === "1b",
+      showC: v === "all" || v === "1c",
+      setAll: () => this.setState({ view: "all" }),
+      setA: () => this.setState({ view: "1a" }),
+      setB: () => this.setState({ view: "1b" }),
+      setC: () => this.setState({ view: "1c" }),
+      btnAll: btn(v === "all"), btnA: btn(v === "1a"), btnB: btn(v === "1b"), btnC: btn(v === "1c"),
+    };
+  }
+}
+</script>
+</body>
+</html>
