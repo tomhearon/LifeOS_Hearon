@@ -43,6 +43,9 @@ Life OS becomes multi-user and modular.
 - App links out to Immich/Nextcloud rather than reimplementing files
 - **Exit criteria:** two active daily users with different module sets
 
+## Module log
+- 21 Oct 2026 — **Money › Claims** (`life-os-claims.jsx`): Cigna Envoy bill ledger, claim packets, reconciliation. Phase 2 note: move documents to the server's file store and seed Postgres from the claims export.
+
 ## Standing principles
 - Data layer outlives every redesign; visuals graft onto it, never the reverse
 - Buy/adopt solved problems (photos, files, sync); build only what's unique to us

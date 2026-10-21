@@ -42,3 +42,17 @@ ground #171310 · panel #1F1915 · panel2 #262019 · panel3 #2E2620 · ink #EDE4
 1. In the app: ⇩ EXPORT → COPY ALL (backs up data before any artifact swap)
 2. Design iterates on visuals in its copy
 3. Bring Design's output back to the working Claude conversation to merge — visuals adopted onto the current data layer, never the reverse
+
+---
+
+## Money › Claims module (`life-os-claims.jsx`, added 21 Oct 2026)
+Cigna Envoy medical-claims tracker: bill intake (photo/PDF → Claude extraction), ledger, filing-deadline alerts, per-member claim packets with copy-ready Envoy fields, submission log, Envoy status paste → reconciliation, reimbursement analytics.
+
+**Data-layer contract — do not change when re-skinning:**
+1. Main key `lifeos.v1.claims` → `{ v, members[], settings{deadlineDays, warnDays, chaseDays, fx}, bills[], claims[] }`.
+2. Documents live in separate keys `lifeos.v1.claims:doc:<id>` (base64 + type + kind); bills hold only `docs[{id,name,type,kind,bytes}]`. EXPORT carries bills/claims, not documents.
+3. Bill stage is derived, never stored: in a claim → claim status; else `need` (missing amount, service date, invoice or proof of payment) or `ready`.
+4. Bill amounts stored in billed currency (EUR default); reimbursements (`paidUSD`) always USD.
+5. Doc kinds: `invoice | proof | both | eob | other`. Claim statuses: `submitted | paid | partial | denied | appeal`.
+6. Reads the theme from `lifeos.v3.health` but never writes to it. `window.storage` only; Claude calls use `/v1/messages`, `claude-sonnet-4-6`.
+7. No automated Envoy login or submission — the module prepares and records; Tom submits in Envoy.

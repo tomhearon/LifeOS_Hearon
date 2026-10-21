@@ -13,7 +13,8 @@ date: 2026-09-07T19:57:39Z
 |---|---|
 | Health & Mind (cardio log, PRs, glide path, mood/energy) | life-os-health (07 SEP 26).jsx, DESIGN-HANDOFF.md |
 | Inventory (library, cellar, valuables) | home-inventory.jsx |
-| Today / Money / Admin / Learning / Review / Agents / Settings | (designed here; no repo counterpart yet) |
+| Money › Medical claims (Cigna Envoy) | life-os-claims.jsx |
+| Today / Money (rest) / Admin / Learning / Review / Agents / Settings | (designed here; no repo counterpart yet) |
 
 ## Notes
 - Repo health build is now "Campaign 95" (110.2→98.0 kg, German focus, 07 Sep–20 Dec); the prototype here still shows the earlier Readjustment demo narrative — reconcile on next design pass if desired.
