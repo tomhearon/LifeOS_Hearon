@@ -13,8 +13,7 @@ date: 2026-09-07T19:57:39Z
 |---|---|
 | Health & Mind (cardio log, PRs, glide path, mood/energy) | life-os-health (07 SEP 26).jsx, DESIGN-HANDOFF.md |
 | Inventory (library, cellar, valuables) | home-inventory.jsx |
-| Health & Mind + Money › Medical claims (current main build) | life-os (21 OCT 26).jsx |
-| Money › Medical claims, standalone | life-os-claims.jsx |
+| Money › Medical claims (Cigna Envoy) | life-os-claims.jsx |
 | Today / Money (rest) / Admin / Learning / Review / Agents / Settings | (designed here; no repo counterpart yet) |
 
 ## Notes
