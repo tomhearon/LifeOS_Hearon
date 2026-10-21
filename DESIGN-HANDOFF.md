@@ -45,7 +45,9 @@ ground #171310 · panel #1F1915 · panel2 #262019 · panel3 #2E2620 · ink #EDE4
 
 ---
 
-## Money › Claims module (`life-os-claims.jsx`, added 21 Oct 2026)
+## Money › Claims module (added 21 Oct 2026)
+**Current main build: `life-os (21 OCT 26).jsx`** — the 22 Sep health app plus a CLAIMS tab, a CLAIMS card on Home, and a Home order when a bill nears its filing deadline. Claims code sits in a self-contained `ClaimsMod` scope inside that file; `life-os-claims.jsx` is the same module as a standalone artifact (keep the two in sync).
+
 Cigna Envoy medical-claims tracker: bill intake (photo/PDF → Claude extraction), ledger, filing-deadline alerts, per-member claim packets with copy-ready Envoy fields, submission log, Envoy status paste → reconciliation, reimbursement analytics.
 
 **Data-layer contract — do not change when re-skinning:**

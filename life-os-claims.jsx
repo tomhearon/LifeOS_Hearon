@@ -356,9 +356,33 @@ function DocList({ docs, onOpen, onKind, onRemove }) {
   );
 }
 
+/* ════════════════════  SUMMARY (for the Life OS home screen)  ════════════════════ */
+
+export function useClaimsSummary(refreshKey) {
+  const [s, setS] = useState(null);
+  useEffect(() => {
+    (async () => {
+      const d = await loadKey(KEY, null);
+      if (!d) { setS({ empty: true }); return; }
+      const settings = { ...blank().settings, ...(d.settings || {}) };
+      const infos = (d.bills || []).map((b) => ({ b, i: billInfo(b, d.claims || [], settings) }));
+      const open = infos.filter(({ i }) => ["need", "ready"].includes(i.stage));
+      const eur = (arr) => arr.reduce((t, { b }) => t + (b.currency === "USD" ? num(b.amount) / settings.fx : num(b.amount)), 0);
+      setS({
+        toClaim: open.length, toClaimEUR: eur(open),
+        ready: open.filter(({ i }) => i.stage === "ready").length,
+        need: open.filter(({ i }) => i.stage === "need").length,
+        waiting: (d.claims || []).filter((c) => ["submitted", "appeal"].includes(c.status)).length,
+        urgent: open.filter(({ i }) => i.daysLeft !== null && i.daysLeft <= settings.warnDays).length,
+      });
+    })();
+  }, [refreshKey]);
+  return s;
+}
+
 /* ════════════════════  APP  ════════════════════ */
 
-export default function LifeOSClaims() {
+export default function LifeOSClaims({ embedded = false }) {
   const [data, setData] = useState(null);
   const [status, setStatus] = useState("loading");
   const [tab, setTab] = useState("overview");
@@ -372,9 +396,11 @@ export default function LifeOSClaims() {
     (async () => {
       const d = await loadKey(KEY, null);
       setData(d ? { ...blank(), ...d, settings: { ...blank().settings, ...(d.settings || {}) } } : blank());
-      const h = await loadKey(HEALTH_KEY, {});
-      const night = new Date().getHours() >= 19 || new Date().getHours() < 7;
-      applyTheme(h?.theme || (h?.autoDark === false ? "field" : night ? "midnight" : "field"));
+      if (!embedded) { // inside Life OS the host app owns the theme
+        const h = await loadKey(HEALTH_KEY, {});
+        const night = new Date().getHours() >= 19 || new Date().getHours() < 7;
+        applyTheme(h?.theme || (h?.autoDark === false ? "field" : night ? "midnight" : "field"));
+      }
       setStatus("ready");
     })();
   }, []);
@@ -415,12 +441,12 @@ export default function LifeOSClaims() {
   const TABS = [["overview", "Overview"], ["bills", "Bills"], ["add", "+ Add bill"], ["claims", "Claims"], ["settings", "Settings"]];
 
   return (
-    <div style={{ background: C.bg, color: C.ink, minHeight: "100vh", fontFamily: SANS, paddingBottom: 80 }}>
-      <div style={{ maxWidth: 960, margin: "0 auto", padding: "20px 16px 0", boxSizing: "border-box" }}>
+    <div style={embedded ? { color: C.ink, fontFamily: SANS, marginTop: 22 } : { background: C.bg, color: C.ink, minHeight: "100vh", fontFamily: SANS, paddingBottom: 80 }}>
+      <div style={embedded ? {} : { maxWidth: 960, margin: "0 auto", padding: "20px 16px 0", boxSizing: "border-box" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 12, flexWrap: "wrap" }}>
           <div>
             <Label style={{ color: C.money }}>Life OS · Money</Label>
-            <div style={{ fontFamily: DISP, fontSize: 26, fontWeight: 600, marginTop: 4 }}>Medical claims</div>
+            <div style={{ fontFamily: DISP, fontSize: embedded ? 20 : 26, fontWeight: 600, marginTop: 4 }}>Medical claims</div>
             <div style={{ fontFamily: MONO, fontSize: 11, color: C.sub, marginTop: 4 }}>CIGNA ENVOY · BILLS IN € · REIMBURSED IN $</div>
           </div>
           <div style={{ fontFamily: MONO, fontSize: 10, color: status === "offline" ? C.bad : C.mut, letterSpacing: "0.1em" }}>

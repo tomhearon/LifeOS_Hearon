@@ -44,6 +44,7 @@ Life OS becomes multi-user and modular.
 - **Exit criteria:** two active daily users with different module sets
 
 ## Module log
+- 21 Oct 2026 — Claims merged into the main build as a tab: `life-os (21 OCT 26).jsx` supersedes `life-os-health (22 SEP 26).jsx` (same `lifeos.v3.health` data, untouched).
 - 21 Oct 2026 — **Money › Claims** (`life-os-claims.jsx`): Cigna Envoy bill ledger, claim packets, reconciliation. Phase 2 note: move documents to the server's file store and seed Postgres from the claims export.
 
 ## Standing principles
