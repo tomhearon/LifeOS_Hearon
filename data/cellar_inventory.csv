@@ -1,0 +1,67 @@
+id,category,subtype,producer,name,vintage,country,region,size_ml,location_type,location_row,location_pos,status,priority,notes
+W001,Wine,Red,Ramón Bilbao,Gran Reserva,2009,Spain,Rioja,750,Rack,1,1,Triage,1,Most heat-resilient of the triage reds; open first
+W002,Wine,Red,Bodegas Gran Feudo,Reserva,2011,Spain,Navarra,750,Rack,1,2,Triage,2,
+W003,Wine,Red,Kistenmacher & Hengerer,Cuvée Maximilian,2011,Germany,Württemberg,750,Rack,1,3,Triage,2,Good small producer; 15 yrs
+W004,Wine,Red,Torre Raone,Lucanto Montepulciano d'Abruzzo,2012,Italy,Abruzzo,750,Rack,1,4,Triage,2,Montepulciano tannin may carry it
+W005,Wine,Red,Calvet,Grande Réserve Bordeaux Supérieur,2014,France,Bordeaux,750,Rack,1,5,Triage,2,
+W006,Wine,White,Inama,Vigneti di Foscarino Soave Classico,2014,Italy,Veneto,750,Rack,1,6,Triage,2,Volcanic cru Soave; age-worthy style but 12 yrs
+W007,Wine,Red,Rocca Maura,Côtes du Rhône,2015,France,Rhône,750,Rack,1,7,Triage,2,
+W008,Wine,Red,Félix Solís,Caliza Gran Selección,2016,Spain,,750,Rack,1,8,Triage,3,
+W009,Wine,Red,Marsovin,Cheval Franc Private Estate Selection,2016,Malta,,750,Rack,2,1,Triage,3,Souvenir bottle
+W010,Wine,White,Tenuta Sant'Antonio,Vecchie Vigne Soave,2017,Italy,Veneto,750,Rack,2,2,Triage,2,
+W011,Wine,Red,Barton & Guestier,Cabernet Sauvignon Réserve,2019,France,,750,Rack,2,3,Triage,3,
+W012,Wine,Red,,Cuvée Sachsen Rotwein Trocken,2019,Germany,Sachsen,750,Rack,2,4,Triage,3,Vintage unconfirmed (approx 2019)
+W013,Wine,Red,Gabriel Meffre,Laurus Châteauneuf-du-Pape,2012,France,Rhône,750,Rack,2,5,Open soon,1,Real structure; best of the older reds
+W014,Wine,Red,Caves Velhas,Romeira Reserva,2015,Portugal,Alentejano,750,Rack,2,6,Open soon,1,Ripe tannin buffers heat damage
+W015,Wine,Red,Calvet,Collection Pomerol,2018,France,Pomerol,750,Rack,2,7,Open soon,2,Merlot-dominant
+W016,Wine,White,Josten & Klein,Schiefer Riesling,,Germany,Mittelrhein,750,Rack,2,8,Open soon,2,VINTAGE UNKNOWN — label water-damaged
+W017,Wine,Sparkling,Hans Wirsching,Wi'secco,,Germany,Franken,750,Rack,4,1,Drink fresh,1,Sparkling degrades fastest
+W018,Wine,White,Schloss Wackerbarth,Edition Frauenkirche Weiss,2019,Germany,Sachsen,750,Rack,4,2,Drink fresh,2,
+W019,Wine,White,,Riesling Spätlese lieblich,,Germany,,750,Rack,4,3,Drink fresh,2,Handwritten label; producer and vintage unknown
+W020,Wine,White,Stallmann-Hiestand,Riesling Kreuz,2023,Germany,Rheinhessen,750,Rack,4,4,Drink fresh,3,
+W021,Wine,White,Stallmann-Hiestand,Sauvignon Blanc Trocken,2024,Germany,Rheinhessen,750,Rack,4,5,Drink fresh,3,
+W022,Wine,White,Stallmann-Hiestand,Grauer Burgunder Aulenberg,2024,Germany,Rheinhessen,750,Rack,4,6,Drink fresh,3,
+W023,Wine,White,Stallmann-Hiestand,Silvaner Trocken,2025,Germany,Rheinhessen,750,Rack,4,7,Drink fresh,3,
+W024,Wine,White,Stallmann-Hiestand,Silvaner Trocken,2025,Germany,Rheinhessen,750,Rack,4,8,Drink fresh,3,
+W025,Wine,Red,Teliani Valley,Saperavi Réserve,2017,Georgia,Kakheti,750,Rack,5,1,Mid-term,2,Saperavi is heat-tolerant
+W026,Wine,Red,Weingut Hägemann Charlottenhof,Dienheimer Kreuz Merlot Trocken,2018,Germany,Rheinhessen,750,Rack,5,2,Mid-term,2,Oak-aged; estate bottled
+W027,Wine,Red,Diemersfontein,Pinotage,2019,South Africa,Wellington,750,Rack,5,3,Mid-term,2,
+W028,Wine,White,Stallmann-Hiestand,Silvaner Trocken,2025,Germany,Rheinhessen,750,Rack,5,4,Drink fresh,3,Third bottle; overflow from row 4
+W029,Wine,Red,Mitravelas,Kokkino Se Mavro,2023,Greece,Nemea,750,Rack,5,5,Keep,3,Youngest red in the collection
+W030,Wine,Sparkling,Bisol,1875 Valdobbiadene Prosecco Superiore,,Italy,Veneto,750,Rack,5,6,Drink fresh,1,Prosecco is a 2-3 yr wine; drink first
+W031,Wine,Sparkling,Schloss Wackerbarth,1836 Hommage au Bussard,,Germany,Sachsen,750,Rack,5,7,Drink fresh,2,Survivor of the original six
+W032,Wine,Sparkling,Bollinger,Rosé Brut,,France,Champagne,750,Rack,5,8,Keep,2,
+W033,Wine,Dessert,,Cinque Terre Sciacchetrà,2005,Italy,Liguria,375,Rack,6,1,Keep,4,Passito; sugar preserves it. Expect fig/walnut/caramel at 21 yrs
+W034,Wine,Fortified,Croft,Quinta da Roeda Vintage Port,2012,Portugal,Douro,750,Rack,6,2,Keep,4,Unfiltered — MUST stay horizontal. Decades of life
+W035,Wine,White,Weingut Werner,Independence Riesling,2018,Germany,Rheingau (Hochheim),750,Rack,6,3,Keep,3,VDP estate
+W036,Wine,White,Weingut Werner,Independence Riesling,2018,Germany,Rheingau (Hochheim),750,Rack,6,4,Keep,3,VDP estate
+W037,Wine,White,Villa Gutenberg / Richard Nägler,Optimus Riesling,2018,Germany,Rheingau,750,Rack,6,5,Keep,3,
+W038,Wine,Red,Ramos Pinto,Duas Quintas,2019,Portugal,Douro,750,Rack,6,6,Keep,3,Douro field blend; heat-tough
+W039,Wine,Red,Abtei St. Hildegard,Assmannshäuser Hinterkirch Spätburgunder,2020,Germany,Rheingau,750,Rack,6,7,Keep,4,Serious Rheingau Pinot ground
+W040,Wine,White,St. Antony,Riesling Orbel GG,2021,Germany,Rheinhessen (Nierstein),750,Rack,6,8,Keep,4,Grosses Gewächs; best bottle in the collection. Decant 30 min
+S001,Spirit,Gin,Edinburgh Gin,The Classic London Dry,,Scotland,,700,Shelf,Gin bay,,Shelf,,
+S002,Spirit,Gin,Ferdinand's,Saar Dry Gin,,Germany,Saar,500,Shelf,Gin bay,,Shelf,,
+S003,Spirit,Gin,Etsu,Handcrafted Gin,,Japan,,700,Shelf,Gin bay,,Shelf,,
+S004,Spirit,Gin,6N Friday,Chic Gin,,,,700,Shelf,Gin bay,,Shelf,,40% ABV
+S005,Spirit,Gin,Schloss Gin,Small Batch,,Germany,,500,Shelf,Gin bay,,Shelf,,
+S006,Spirit,Gin,The Illusionist,Dry Gin,,Germany,,500,Shelf,Gin bay,,Shelf,,Colour-changing gin
+S007,Spirit,Gin,Kaiser Hill,16 Bavarian Dry Gin,,Germany,Bavaria,500,Shelf,Gin bay,,Shelf,,
+S008,Spirit,Irish Whiskey,Midleton,Very Rare,,Ireland,Co. Cork,700,Shelf,Whiskey bay,,Shelf,,Boxed. Replace cardboard sleeve if basement is damp
+S009,Spirit,Scotch,Kirkland,10 Year Speyside Single Malt,,Scotland,Speyside,700,Shelf,Whiskey bay,,Shelf,,Low fill — drink before full bottles
+S010,Spirit,Scotch,Kirkland,Highland Single Malt,,Scotland,Highland,200,Shelf,Whiskey bay,,Shelf,,Low fill
+S011,Spirit,Bourbon,Maker's Mark,46,,USA,Kentucky,750,Shelf,Whiskey bay,,Shelf,,47% ABV. Low fill — oxidising
+S012,Spirit,Bourbon,Old 55,Single Barrel,,USA,Newtown IN,750,Shelf,Whiskey bay,,Shelf,,Signed label. Low fill
+S013,Spirit,Cognac,Rémy Martin,VSOP Fine Champagne,,France,Cognac,700,Shelf,Brandy bay,,Shelf,,
+S014,Spirit,Apple Brandy,Busnel,Calvados Vieilli en Fûts de Chêne,,France,Normandy,200,Shelf,Brandy bay,,Shelf,,40% ABV
+S015,Spirit,Grappa,Podere Spazzavento,Grappa Toscana Riserva,,Italy,Tuscany,500,Shelf,Brandy bay,,Shelf,,
+S016,Spirit,Fortified,W. & J. Graham's,10 Year Tawny Port,,Portugal,Douro,500,Shelf,Liqueur bay,,To shelve,,In garage — bring in. Upright; screwcap
+S017,Spirit,Fortified,W. & J. Graham's,20 Year Tawny Port,,Portugal,Douro,500,Shelf,Liqueur bay,,To shelve,,In garage — bring in. Upright; screwcap
+S018,Spirit,Bitter,Campari,Campari Milano,,Italy,,700,Shelf,Liqueur bay,,Shelf,,
+S019,Spirit,Bitter,Campari,Campari Milano,,Italy,,700,Shelf,Liqueur bay,,Shelf,,
+S020,Spirit,Liqueur,Mastic Tears,Mastiha Spirit Classic,,Greece,Chios,700,Shelf,Liqueur bay,,Shelf,,
+S021,Spirit,Liqueur,Mastic Tears,Mastiha Spirit Classic,,Greece,Chios,50,Shelf,Liqueur bay,,Shelf,,Mini
+S022,Spirit,Liqueur,Mariquinhas,Licor de Ginja de Óbidos,2022,Portugal,Óbidos,200,Shelf,Liqueur bay,,Shelf,,Sour cherry
+S023,Spirit,Liqueur,Sabores da Gardunha,Ginja com Fruto,,Portugal,,200,Shelf,Liqueur bay,,Shelf,,19% ABV; cherries in bottle
+S024,Spirit,Liqueur,Rauschritter,LIMALI,,Germany,Mainz,700,Shelf,Liqueur bay,,Shelf,,16% ABV
+S025,Spirit,Vermouth,,Wermut Bierstein am Rhein,,Germany,,750,Fridge,,,Refrigerate,1,Wine-based — oxidises within weeks of opening. NOT basement
+S026,Spirit,Sake,Hakuro Shuzo,Junmai Daiginjo (ANA edition),,Japan,Niigata,720,Fridge,,,Refrigerate,1,Check brewing date on bottle. Most perishable item — drink soon

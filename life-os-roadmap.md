@@ -45,6 +45,7 @@ Life OS becomes multi-user and modular.
 
 ## Module log
 - 21 Oct 2026 — **Money › Claims** (`life-os-claims.jsx`): Cigna Envoy bill ledger, claim packets, reconciliation. Phase 2 note: move documents to the server's file store and seed Postgres from the claims export.
+- 26 Oct 2026 — **Household › Cellar** (`life-os-cellar.jsx`): wine rack and spirits shelf in the Gau-Bischofsheim basement — 66 bottles, physical slot map (6 rows × 8), drink-order status, slot-conflict detection. Seed data in `data/`; paste `data/cellar_import.json` into the module's Data tab to load. Phase 2 note: seed Postgres from `data/cellar_inventory.json` — the CSV is the human-editable source.
 
 ## Standing principles
 - Data layer outlives every redesign; visuals graft onto it, never the reverse
